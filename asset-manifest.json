@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Musomatic/static/css/main.cf1b9e29.chunk.css",
+    "main.js": "/Musomatic/static/js/main.c2ace90f.chunk.js",
+    "main.js.map": "/Musomatic/static/js/main.c2ace90f.chunk.js.map",
+    "runtime-main.js": "/Musomatic/static/js/runtime-main.492e8e93.js",
+    "runtime-main.js.map": "/Musomatic/static/js/runtime-main.492e8e93.js.map",
+    "static/css/2.835e987b.chunk.css": "/Musomatic/static/css/2.835e987b.chunk.css",
+    "static/js/2.9f2fa7d1.chunk.js": "/Musomatic/static/js/2.9f2fa7d1.chunk.js",
+    "static/js/2.9f2fa7d1.chunk.js.map": "/Musomatic/static/js/2.9f2fa7d1.chunk.js.map",
+    "index.html": "/Musomatic/index.html",
+    "static/css/2.835e987b.chunk.css.map": "/Musomatic/static/css/2.835e987b.chunk.css.map",
+    "static/css/main.cf1b9e29.chunk.css.map": "/Musomatic/static/css/main.cf1b9e29.chunk.css.map",
+    "static/js/2.9f2fa7d1.chunk.js.LICENSE.txt": "/Musomatic/static/js/2.9f2fa7d1.chunk.js.LICENSE.txt",
+    "static/media/heroSection.css": "/Musomatic/static/media/hero.bd007aec.svg",
+    "static/media/music_icon.b3d780cd.svg": "/Musomatic/static/media/music_icon.b3d780cd.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.492e8e93.js",
+    "static/css/2.835e987b.chunk.css",
+    "static/js/2.9f2fa7d1.chunk.js",
+    "static/css/main.cf1b9e29.chunk.css",
+    "static/js/main.c2ace90f.chunk.js"
+  ]
+}
