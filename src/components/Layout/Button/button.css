@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+	--Poppins: "Poppins", sans-serif;
+	--Roboto: "Roboto", sans-serif;	
+}
+
+/**************************************************************************/
+/*****************************    Button    *******************************/
+/**************************************************************************/
+
+.submit-btn {
+    width: 100%;
+    color: #6cc027;
+	border: 1px solid #6cc027;
+    border-radius: 30px;
+	outline: none;
+    background-color: #202020;
+	font-family: var(--Poppins);
+	font-weight: 500;
+	position: relative;
+	padding: 10px 30px;
+	cursor: pointer;
+	text-align: center;
+	display: block;    
+}
+
+.submit-btn:hover {
+    color: #202020;
+    border: 1px solid #6cc027;
+	box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+	background-color: #6cc027 !important;
+}
+
+.submit-btn span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.submit-btn i {
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.25s;
+    font-weight: 700;
+	margin-top: 3px;
+}
+
+.submit-btn:hover span {
+	padding-right: 25px;
+}
+
+.submit-btn:hover i {
+	opacity: 1;
+	right: 0;
+}
+
+.submit-btn:focus {
+    color: #202020 !important;
+	background-color: #6cc027 !important;
+	border: 1px solid #6cc027;
+	outline: none !important;
+}
+
+.submit-btn:disabled,
+.submit-btn[disabled] {
+	color: #202020 !important;
+	background-color: #6cc027 !important;
+	border: 1px solid #6cc027;
+	outline: none !important;
+}

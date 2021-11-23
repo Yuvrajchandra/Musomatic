@@ -1,0 +1,60 @@
+/**************************************************************************/
+/*****************************    Global    *******************************/
+/**************************************************************************/
+
+body {
+	background-color: rgb(15, 17, 24);
+	background-image: url("../assets/hero.svg");
+	color: rgb(236, 236, 236);
+	overflow-x: hidden;
+}
+
+.loading {
+	margin-top: 140px;
+	padding-bottom: 400px;
+	text-align: center;
+}
+
+.cursor_ptr {
+	cursor: pointer;
+}
+
+.green_text {
+	color: #6cc027;
+	font-family: var(--Poppins);
+}
+
+a[disabled] {
+	color: gray;
+}
+
+a[disabled]:hover {
+	color: gray;
+	animation: none;
+	cursor: not-allowed;
+}
+
+a:hover {
+	color: #6cc027 !important;
+}
+
+/* Scroll bar width */
+::-webkit-scrollbar {
+	width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: rgb(13, 13, 13);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	border-radius: 50px;
+	background: rgb(83, 194, 75);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(83, 194, 75);
+}
