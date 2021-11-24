@@ -1,0 +1,140 @@
+.create_nft_bg {
+	/* Frosted effect */
+	background-color: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(5px);
+	border-radius: 12px;
+	z-index: 9;
+}
+
+.upload_cover_image_div {
+	padding: 48px 42px 48px 42px;
+	width: 25%;
+	position: relative;
+}
+
+.create_nft_heading {
+	font-family: var(--Poppins);
+	font-weight: 300;
+	color: #fff;
+	font-size: 1.2rem;
+	letter-spacing: 0.25px;
+	margin-bottom: 35px;
+}
+
+.input-text-field {
+	border: none !important;
+	outline: none !important;
+}
+
+.input-text-field:focus {
+	border: none !important;
+	outline: none !important;
+}
+/* Hide input field text of the image cover */
+.upload_text_inp {
+	display: none;
+}
+
+/* OUTER DIV FOR UPLOAD IMAGE */
+.upload-img-div {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	background: rgba(105, 105, 105, 0.16);
+	backdrop-filter: blur(2px);
+	margin: 0px;
+	font-size: 0.7em;
+	font-family: var(--Poppins);
+	color: #9b9b9b;
+
+	/* Center the div items */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.upload-image-label-div {
+	display: flex;
+	justify-content: space-between;
+}
+
+.upload-cover-img-option {
+	width: 28px;
+	margin-bottom: 5px;
+}
+
+.upload-image-label {
+	border: none !important;
+	outline: none !important;
+	margin: 0px !important;
+}
+
+.upload-image-label:hover {
+	cursor: pointer;
+}
+
+.upload-img-div:hover {
+	cursor: pointer;
+	background-color: rgba(146, 146, 146, 0.3);
+	color: #6cc027;
+}
+
+/* INPUT FIELDS */
+.input-text-field {
+	background-color: #323232;
+	width: 100%;
+	border-radius: 4px;
+	padding: 8px 12px;
+	font-size: 0.8rem;
+	font-weight: 300;
+	font-family: var(--Poppins);
+	color: #6cc027;
+}
+
+::placeholder {
+	color: #6e6e6e;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #6e6e6e;
+}
+
+/* ON SALE RADIO BUTTONS */
+.on-sale-div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.on-sale-div p {
+	margin: 0px !important;
+}
+
+.custom-radio-box {
+	background: none;
+	border-color: #6cc027 !important;
+}
+
+.custom-radio-box:hover,
+.form-check-label:hover {
+	cursor: pointer;
+}
+
+.form-check-label {
+	font-family: var(--Poppins);
+	font-size: 0.7rem;
+	font-weight: 300;
+}
+
+.form-check-input:checked[type="radio"] {
+	background: none;
+	border-color: #000 !important;
+}
+
+.form-check-input:checked[type="radio"] {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%6cc027'/%3e%3c/svg%3e");
+	/*Filter the svg color in the bootstrap radio*/
+    filter: invert(80%) sepia(57%) saturate(2454%) hue-rotate(42deg) brightness(91%) contrast(74%);
+}
