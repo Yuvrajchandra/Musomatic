@@ -10,6 +10,102 @@
 /******************************    Hero    ********************************/
 /**************************************************************************/
 
+/*MEDIA QUERIES*/
+@media (max-width: 645px) {
+	.intro-text.intro-text.intro-text {
+		font-size: 1.15em;
+		font-weight: 400;
+	}
+
+	.music-card.music-card.music-card.music-card {
+		width: 85%;
+		height: 350px;
+		padding: 8px;
+		padding-top: 25px;
+		display: flex;
+		flex-direction: column;
+		/* use overflow when content needs to be cropped */
+		overflow-y: hidden;
+		overflow-x: hidden;
+		/* Added for centring elems */
+		align-items: center;
+	}
+
+	.music-card-text.music-card-text.music-card-text.music-card-text {
+		font-size: 1.48em;
+		margin-bottom: 15px;
+	}
+
+	.music-card.music-card.music-card img {
+		margin: 0;
+		width: 350px;
+	}
+
+	.about-us {
+		font-size: 0.8em;
+	}
+}
+
+@media (max-width: 768px) {
+	.intro-card.intro-card {
+		width: 85%;
+		padding: 40px 20px;
+		border-radius: 15px;
+	}
+
+	.intro-text.intro-text {
+		font-size: 1.45em;
+		font-weight: 400;
+	}
+
+	.brand-intro.brand-intro {
+		width: 85%;
+		padding-left: 15px;
+	}
+
+	.brand-intro.brand-intro h2 {
+		font-size: 1.9em;
+	}
+
+	.brand-intro.brand-intro p {
+		font-size: 0.9em;
+		max-width: 85%;
+	}
+
+	.music-card.music-card.music-card {
+		width: 85%;
+		height: 100px;
+		padding: 10px 0px;
+		border-radius: 15px;
+		margin-bottom: 35px;
+	}
+
+	.music-card-text.music-card-text.music-card-text {
+		padding-left: 30px;
+		font-size: 1.08em;
+	}
+
+	.music-card.music-card img {
+		margin-top: 0px;
+		width: 180px;
+	}
+
+	.about-us {
+		padding-left: 0 !important;
+	}
+}
+
+@media (max-width: 850px) {
+	.music-card.music-card {
+		padding-left: 30px;
+	}
+
+	.music-card-text.music-card-text {
+		font-size: 1.2em;
+		padding-left: 5px;
+	}
+}
+
 .hero-container {
 	width: 100vw;
 	background-image: url("../../../assets/hero.svg");
@@ -48,7 +144,7 @@
 .intro-text {
 	color: #6cc027;
 	font-family: var(--Poppins);
-	font-size: 1.7em;
+	font-size: 1.8em;
 	font-weight: 400;
 }
 
