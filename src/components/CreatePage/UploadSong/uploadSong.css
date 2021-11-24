@@ -1,0 +1,91 @@
+.main-upload-div {
+	width: fit-content;
+	padding: 0px !important;
+	margin-left: 24px;
+}
+
+.div1-content {
+	border-right: 3px solid #3f3f3d;
+	padding-right: 2.9rem;
+}
+
+.upload-song-div-1 {
+	width: 420px;
+	/* Padding */
+	padding: 3em;
+	padding-right: 3px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	position: relative;
+	z-index: 8;
+}
+
+.upload-song-option {
+	width: 17px;
+	transform: rotate(22.5deg);
+}
+
+/* INPUT FILE TEXT */
+.song-inp-text {
+	font-family: var(--Poppins);
+	font-size: 0.75rem;
+	font-weight: 300;
+	/* display: inline-block; */
+	display: none;
+	width: 84px;
+}
+
+.song-inp-text:hover {
+	cursor: pointer;
+}
+
+/* SOCIAL LINKS  */
+.add-social-links {
+	display: flex;
+}
+
+.music-link-label {
+	font-family: var(--Poppins);
+	background-color: #323232;
+	border-radius: 4px;
+	position: relative;
+	display: inline-block;
+	color: #7a7a7a;
+	font-size: 0.8rem;
+	font-weight: 300;
+	text-align: center;
+	padding: 8px;
+	margin: 0px;
+	width: 115px !important;
+	/* CREATE A PSUEDO BORDER */
+	border: 0.2px solid rgba(54, 56, 65, 0);
+}
+
+.music-link-label:hover {
+	cursor: pointer;
+	border: 0.2px solid #89e240;
+}
+
+.links-input {
+	background-color: #323232;
+	border-radius: 4px;
+	padding: 8px 12px;
+	font-size: 0.8rem;
+	font-weight: 300;
+	font-family: var(--Poppins);
+	color: #6cc027;
+	margin-left: 10px;
+	border: 0.2px solid rgba(255, 255, 255, 0);
+	outline: none !important;
+	flex: 1;
+	max-width: 195px;
+}
+
+.links-input:focus {
+	border: 0.2px solid #89e240;
+	outline: none !important;
+}
+
+.large-dropdown-div .dropdown {
+	width: 100%;
+}
