@@ -1,6 +1,6 @@
 import React from "react";
 import "./uploadImageDiv.css";
-import uploadCover from "../../../assets/uploadImage.svg";
+import UploadImage from "./UploadImageUtils/UploadImage";
 
 export default function CreateYourNFT() {
 	return (
@@ -8,18 +8,7 @@ export default function CreateYourNFT() {
 			{/* UPLOAD COVER IMAGE */}
 			<h3 className="create_nft_heading">Create your NFT</h3>
 			<div className="upload-image-label-div">
-                <label htmlFor="upload-image-inp">
-					<div className="upload-img-div">
-						<img className="upload-cover-img-option" src={uploadCover} alt="cover logo" />
-						<label htmlFor="upload-image-inp" className="upload-image-label">
-							Upload
-						</label>
-						<label htmlFor="upload-image-inp" className="upload-image-label">
-							Song Cover
-						</label>
-						<input type="file" id="upload-image-inp" accept=".jpg, .jpeg, .png, .bmp, .wmv" className="upload_text_inp mb-5 mt-2" />
-					</div>
-				</label>
+                <UploadImage/>
 			</div>
 			{/* INPUT FIELDS */}
 			<div className="mt-4">

@@ -21,6 +21,13 @@
 	margin-bottom: 35px;
 }
 
+#uploaded-img {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
 .input-text-field {
 	border: none !important;
 	outline: none !important;
@@ -137,4 +144,33 @@
 	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%6cc027'/%3e%3c/svg%3e");
 	/*Filter the svg color in the bootstrap radio*/
     filter: invert(80%) sepia(57%) saturate(2454%) hue-rotate(42deg) brightness(91%) contrast(74%);
+}
+
+.uploaded-img-label {
+	position: relative;
+}
+
+.edit-icon-btn {
+	display: none;
+	position: absolute;
+	margin: 0px;
+	padding: 5px;
+	padding-left: 9px;
+	bottom: 0px;
+	right: 0px;
+	width: 25px;
+	color: #6cc027;
+	background-color: #323232;
+	border-radius: 8px;
+	border: none;
+}
+
+.edit-icon-btn:hover {
+	cursor: pointer;
+}
+
+.uploaded-img-label:hover .edit-icon-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
