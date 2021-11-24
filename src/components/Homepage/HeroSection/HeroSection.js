@@ -14,7 +14,7 @@ export default function HeroSection() {
 						<div className="intro-card">
 							<span className="intro-text">
 								<div className="row justify-content-center">
-									<div className="col-lg-5 col-md-10">Become a part of Digital Music and Collectibles history</div>
+									<div className="col-lg-5 col-md-10">Become a part of the NFT Music Revolution</div>
 								</div>
 							</span>
 						</div>
@@ -23,8 +23,8 @@ export default function HeroSection() {
 						<div className="brand-intro">
 							<h2>Musomatic</h2>
 							<p className="mt-3">
-								We aim to uplift musicians by enabling them to creating NFTs of their music and providing them with royalties and recognition that they deserve but are not able to get
-								enough from other sources.
+								We aim to uplift musicians by enabling them to create NFTs of their music. We intend to provide them with royalties and recognition that they deserve but are not able
+								to get enough from other sources.
 							</p>
 
 							<div className="row mt-5">
@@ -55,15 +55,16 @@ export default function HeroSection() {
 							<img src={musicLogo} alt="music icon" />
 						</div>
 
-						{/* ABOUT Musomatic */}
+						{/*ABOUT THE ORG*/}
 						<div className="about-us">
 							<p>
-								Musomatic is a decentralized application(dApp) for musicians to create NFTs of their music. These NFTs can then be traded and each time an NFT gets traded, the musician
-								will get 5% of the trade as royalty!
+								Musomatic is a dApp for musicians to create NFTs of their music. These NFTs can then be traded and each time an NFT gets traded, the musician will get 5% of the trade
+								as royalty!
 							</p>
+							<p>It doesn't matter if you're a bathroom singer, growing YouTube/Instagram star, or a famous musician. Anyone can create NFTs of their music!</p>
 							<p>
-								It is a platform to trade individual NFTs of songs. NFTs from artists can be looked at as stocks in the market. Just as buying stocks of companies that people believe
-								to perform good in the future can result in massive profits, similarly, the value of these NFTs can skyrocket if that artist grows to be successful over time.
+								Musomatic is a platform to trade individual NFTs of songs. NFTs from artists can be looked at as stocks in the market. Just as buying stocks of companies that people
+								believe to perform good in the future can result in massive profits, similarly, the value of these NFTs can skyrocket if that artist grows to be successful over time.
 							</p>
 						</div>
 					</div>

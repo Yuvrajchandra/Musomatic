@@ -1,0 +1,97 @@
+/* BG img will be changed to eomBG in mobile */
+/* and MXV black png logo will appear like that in UI design */
+.how-it-works-bg {
+	background-image: url("../../../assets/how_it_worksBG.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100vw;
+	padding: 100px;
+	padding-bottom: 50px;
+	display: flex;
+	justify-content: space-evenly;
+
+	position: relative; /* For positioning of logo */
+}
+
+/* Brand Logo css */
+.how-it-works-bg .brand-logo-how-it-works {
+	position: absolute;
+	left: 0px;
+	top: 20%;
+	width: 65px;
+}
+
+.how-it-works-box {
+	position: relative;
+	max-width: 1500px;
+	font-size: 16px;
+}
+
+.section-description p {
+	font-family: var(--Roboto);
+	font-weight: 400;
+	font-size: 1em;
+}
+
+.section-heading > h2 {
+	color: #6cc027;
+	font-family: var(--Poppins);
+	font-size: 2.1em;
+	font-weight: 500;
+	margin-left: -10px;
+}
+
+.section-description {
+	width: 65%;
+}
+
+.cards {
+	display: flex;
+	justify-content: space-between;
+}
+
+.cards p {
+	font-family: var(--Roboto);
+	font-weight: 400;
+	font-size: 1em;
+}
+
+@media (max-width: 784px) {
+	.how-it-works-bg {
+		background-image: url("../../../assets/eomBG.svg");
+		padding: 50px 100px;
+	}
+
+	.section-heading > h2 {
+		margin-bottom: 1.5rem;
+	}
+
+	.section-description {
+		width: 100%;
+	}
+}
+
+@media (max-width: 645px) {
+	.how-it-works-bg {
+		padding: 50px 70px;
+	}
+
+	.section-heading > h2 {
+		font-size: 1.9em;
+	}
+
+	.how-it-works-bg .brand-logo-how-it-works {
+		display: none;
+	}
+
+	.section-description {
+		font-size: 0.8em;
+		margin-left: 0 !important;
+	}
+
+	.cards {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+}

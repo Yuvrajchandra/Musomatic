@@ -1,0 +1,100 @@
+.eombg-div{
+    background-image: url("../../../assets/eomBG.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 60px 150px 140px 200px;
+    margin:0px;
+    /* For postioning of brand logo */
+    position: relative;
+}
+
+/* Brand logo for eom */
+.eombg-div .brand-logo-eom{
+    position: absolute;
+    right: 0px;
+    top: 10%;
+    width: 80px;
+}
+
+.eom-box{
+    position: relative;
+	max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+	font-size: 16px;
+}
+
+.eombg-div h2{
+    color: #6cc027 !important;
+    font-family: var(--Poppins);
+	font-size: 2.1em;
+    display: inline-block;
+    width: 30%;
+	font-weight: 500;
+}
+
+.eombg-div img{
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .eombg-div{
+        padding: 20px 65px 100px 100px;
+    }
+
+    .eombg-div .brand-logo-eom{
+        width: 60px;
+        top: 5%;
+    }
+
+    .eombg-div h2{
+        font-size:2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .eombg-div{
+        padding: 20px 50px 100px 85px;
+    }
+
+    .eombg-div .brand-logo-eom{
+        width: 48px;
+        top: 4%;
+    }
+
+    .eombg-div h2{
+        font-size: 1.37em;
+    }
+}
+
+@media (min-width: 645px) {
+    .ecom2{
+        display: none;
+    }
+}
+
+@media (max-width: 645px) {
+    .eombg-div{
+        padding: 60px 65px 80px 60px;  
+        text-align: center;
+    }
+
+    .eombg-div .brand-logo-eom{
+        width: 12%;
+        top: 245px;
+    }
+
+    .eombg-div img{
+        width: 85%;
+    }
+
+    .eombg-div h2 {
+        font-size: 1.6em;
+        margin-bottom: 40px;
+        width: 80%;
+    }
+
+    .ecom1{
+        display: none;
+    }
+}
