@@ -1,8 +1,12 @@
 import React from "react";
 import "./uploadSong.css";
+import Dropdown from "./UploadSongUtil/Dropdown";
 import MusicUploadLabel from "./UploadSongUtil/MusicUploadLabel";
+import UploadSongDiv2 from "./UploadSongDiv2/UploadSongDiv2";
 
 export default function UploadSong(props) {
+	const genre = ["Pop", "Classical", "Rap", "Indian", "Cultural"];
+
 	return (
 		<div className="main-upload-div row p-0">
 			{/* DIV 1 */}
@@ -43,8 +47,14 @@ export default function UploadSong(props) {
 							<input type="text" id="yt-music" className="links-input" name="youtubeMusicLink" />
 						</div>
 					</div>
+					{/* GENRE DROPDOWN */}
+					<div className="large-dropdown-div">
+						<p>Genre</p>
+						<Dropdown optionsArray={genre} dropdownID="genreDropdown"/>
+					</div>
 				</div>
 			</div>
+			<UploadSongDiv2/>
         </div>
 	);
 }
