@@ -1,0 +1,28 @@
+.create_container {
+	width: 100vw;
+	background-image: url("../../assets/hero.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+	padding-top: 140px;
+	padding-bottom: 120px;
+}
+
+.create_box {
+	width: 100%;
+	position: relative;
+	max-width: 1500px;
+	font-size: 16px;
+}
+
+.nft_content p{
+	font-family: var(--Poppins);
+	font-weight: 500;
+	font-size: 0.8rem;
+	margin-top: 12px;
+	margin-bottom: 4px;
+}

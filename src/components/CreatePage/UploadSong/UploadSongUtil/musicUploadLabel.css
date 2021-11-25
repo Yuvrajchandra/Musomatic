@@ -1,0 +1,50 @@
+.vinyl-record-img {
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+}
+
+.uploaded-song-label {
+	position: relative;
+}
+
+.uploaded-song-label:hover {
+	cursor: pointer;
+}
+
+.edit-icon-song-btn {
+	display: none;
+	position: absolute;
+	margin: 0px;
+	padding: 5px;
+	padding-left: 9px;
+	bottom: 0px;
+	right: 0px;
+	width: 25px;
+	color: #6cc027;
+	background-color: #323232;
+	border-radius: 8px;
+	border: none;
+}
+
+.edit-icon-song-btn:hover {
+	cursor: pointer;
+}
+
+.uploaded-song-label:hover .edit-icon-song-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#uploaded-song-name {
+	font-family: var(--Poppins);
+	font-size: 0.75rem;
+	font-weight: 300;
+	display: inline-block;
+	width: 84px;
+}
+
+#uploaded-song-name:hover {
+	cursor: text;
+}
