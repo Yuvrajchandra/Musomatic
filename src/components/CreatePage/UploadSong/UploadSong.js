@@ -3,6 +3,7 @@ import "./uploadSong.css";
 import Dropdown from "./UploadSongUtil/Dropdown";
 import MusicUploadLabel from "./UploadSongUtil/MusicUploadLabel";
 import UploadSongDiv2 from "./UploadSongDiv2/UploadSongDiv2";
+import UploadSongDiv3 from "./UploadSongDiv3/UploadSongDiv3";
 
 export default function UploadSong(props) {
 	const genre = ["Pop", "Classical", "Rap", "Indian", "Cultural"];
@@ -55,6 +56,7 @@ export default function UploadSong(props) {
 				</div>
 			</div>
 			<UploadSongDiv2/>
+			<UploadSongDiv3/>
         </div>
 	);
 }

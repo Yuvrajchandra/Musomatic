@@ -26,3 +26,58 @@
 	margin-top: 12px;
 	margin-bottom: 4px;
 }
+/* TERMS AND CONDITION */
+.terms-conditions-div {
+	width: calc(33% + 866px);
+	margin-left: 14px !important;
+	background-color: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(5px);
+	border-radius: 12px;
+	font-family: var(--Poppins);
+	padding: 24px 30px 32px 30px;
+}
+
+.terms-conditions-div label {
+	margin: 0px;
+	margin-bottom: 5px;
+	font-weight: 500;
+	font-size: 0.85rem;
+	cursor: default;
+}
+
+.terms-conditions-div label:last-child {
+	margin-bottom: 0px;
+}
+
+.terms-conditions-div a {
+	color: #6cc027;
+}
+
+.terms-conditions-div label a:hover {
+	color: #589228 !important;
+}
+
+.submit-btn-div {
+	margin-left: auto;
+	margin-top: 0px;
+}
+
+.submit-btn-div button {
+	padding: 8px 12px !important;
+}
+
+.form-check-input[type="checkbox"] {
+	background: none;
+	border: 1px solid #6cc027;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.form-check-input[type="checkbox"]:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.form-check-label {
+	cursor: pointer;
+}
