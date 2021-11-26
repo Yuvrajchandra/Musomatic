@@ -6,6 +6,17 @@ import "./dashboard.css";
 import ConnectMetamask from "../Utils/ConnectMetamask/ConnectMetamask";
 
 export default function Dashboard(props) {
+	function isOwner(_song) {
+		return _song.currentOwnerAddress === props.account;
+	}
+
+	function isCreator(_song) {
+		return _song.artistAddress === props.account;
+	}
+
+	useEffect(() => {
+		ConnectMetamask("connectButton", "Install MetaMask", "Connect with Metamask");
+	}, []);
 
 	return (
 		<Fragment>
