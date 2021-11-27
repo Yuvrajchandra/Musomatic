@@ -5,6 +5,7 @@ import "./App.css";
 import HomePage from "./Homepage/HomePage";
 import Create from "./CreatePage/Create";
 import PageNotFound from "./PageNotFound/PageNotFound";
+import Library from "./Library/Library";
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 				<Route exact path="/" component={HomePage} />
 				<Route exact path="/create" component={Create}/>
 				<Route path="/404" exact component={PageNotFound} />
+				<Route path="/library" exact component={Library} />
 				<Redirect to="/404" />
 			</Switch>
 		</HashRouter>
