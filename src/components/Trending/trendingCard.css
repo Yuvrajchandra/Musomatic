@@ -1,0 +1,45 @@
+.trending_card {
+	background-color: rgba(45, 45, 45, 0.45);
+	backdrop-filter: blur(5px);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	text-align: center;
+	padding: 24px 24px 32px 24px;
+}
+
+.trending_card:hover {
+	background-color: rgba(63, 63, 63, 0.45);
+	cursor: pointer;
+}
+
+.trending_card_row {
+	width: 100% !important;
+}
+
+.trending_album_cover {
+	border-radius: 10px;
+	width: 100%;
+	min-height: 216px;
+	object-fit: cover !important;
+}
+
+.trending_song_name,
+.trending_song_price {
+	color: #6cc023;
+	font-family: var(--Roboto);
+	font-size: 1.2em;
+	font-weight: 500;
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+
+.trending_song_by {
+	color: #fff;
+	font-family: var(--Roboto);
+	font-weight: 300;
+	font-size: 0.9em;
+	margin-bottom: 15px;
+}
