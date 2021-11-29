@@ -5,6 +5,18 @@ import TrendingCard from "./TrendingCard";
 import trendingIcon from "../../assets/trendingIcon.svg";
 
 export default function Trending(props) {
+	const trending_ordered = [...props.songNFTs];
+	trending_ordered.sort((a, b) => {
+		return b.sales.previousOwners.length - a.sales.previousOwners.length;
+	});
+
+	const trendingCards = trending_ordered.slice(0, 4).map((song, key) => (
+		<div className="col-xl-3 col-lg-4 col-md-6 col-sm-9 col-12 m-0 p-3" key={key}>
+			<Link to={`/song-info/${song.id}`}>
+				<TrendingCard song={song} />
+			</Link>
+		</div>
+	));
 
 	return (
 		<Fragment>
