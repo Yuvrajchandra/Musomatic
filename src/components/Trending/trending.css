@@ -1,0 +1,128 @@
+.trending_container {
+	width: 100vw;
+	background-image: url("../../assets/section_4.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 60px;
+	padding-top: 160px;
+	padding-bottom: 80px;
+}
+
+.trending_box {
+	width: 95%; /*We should keep it 80% so that there is consistency among home library and trending box*/
+	position: relative;
+	max-width: 1500px;
+	font-size: 16px;
+}
+
+.trending_bg_glass {
+	background-color: rgba(54, 54, 54, 0.418);
+	backdrop-filter: blur(5px);
+	padding: 35px 50px 60px 50px;
+	border-radius: 14px;
+}
+
+.trending_cards_div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.trending_cards_row {
+	width: 100%;
+}
+
+.trending_heading {
+	color: #6cc027;
+	font-family: var(--Poppins);
+	font-size: 1.6em;
+	font-weight: 500;
+	margin-bottom: 40px;
+}
+
+.cta_create_trend {
+	background-color: rgba(54, 54, 54, 0.318);
+	backdrop-filter: blur(5px);
+	padding: 80px;
+	border-radius: 14px;
+}
+
+.cta_create_trend img {
+	width: 200px;
+}
+
+.cta_trend_text {
+	text-align: center;
+}
+
+.cta_trend_text p {
+	color: #6cc027;
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+.cta_trend_text span {
+	color: #868686;
+}
+
+.create_trend_btn {
+	text-align: center;
+}
+
+.create_trend_btn button {
+	margin: 0px !important;
+}
+
+@media (min-width: 451px) and (max-width: 770px) {
+	.cta_create_trend {
+		padding: 50px 5px 50px 5px;
+	}
+
+	.cta_create_trend img {
+		width: 165px;
+	}
+
+	.cta_trend_text p {
+		font-size: 1.35em;
+	}
+
+	.cta_trend_text span {
+		font-size: 0.95rem;
+	}
+}
+
+@media (max-width: 450px) {
+	.trending_box.trending_box {
+		width: 120%;
+	}
+
+	.trending_bg_glass.trending_bg_glass {
+		padding: 35px 20px 40px 20px;
+	}
+
+	.trending_heading.trending_heading {
+		margin-bottom: 25px;
+		margin-left: 15px;
+	}
+
+	.cta_create_trend {
+		padding: 50px 5px 50px 5px;
+	}
+
+	.cta_create_trend img {
+		width: 128px;
+	}
+
+	.cta_trend_text p {
+		font-size: 1.15em;
+	}
+
+	.cta_trend_text span {
+		font-size: 0.85rem;
+	}
+}
