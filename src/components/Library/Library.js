@@ -1,11 +1,27 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import "./library.css";
-import Dropdown from "./Dropdown/Dropdown";
+import Dropdown from "./LibraryUtils/Dropdown/Dropdown";
+import MultiDropdown from "./LibraryUtils/Dropdown/MultiDropdown";
+import SongPages from "./LibraryUtils/SongPages/SongPages";
+import Cta from "../Homepage/CtaSection/Cta";
 
 export default function Library(props) {
 	const genres = ["Pop", "Classical", "Rap", "Indian", "Cultural"];
 	const lyrics = ["Yes", "No"];
+	const instrumentsUsed = [
+		{ value: "Acoustic Guitar", label: "Acoustic Guitar" },
+		{ value: "Drums", label: "Drums" },
+		{ value: "Violin", label: "Violin" },
+		{ value: "Piano", label: "Piano" },
+		{ value: "Flute", label: "Flute" },
+		{ value: "Electric Guitar", label: "Electric Guitar" },
+		{ value: "Keyboard", label: "Keyboard" },
+		{ value: "Xylophone", label: "Xylophone" },
+		{ value: "Saxophone", label: "Saxophone" },
+		{ value: "Tamberine", label: "Tamberine" },
+		{ value: "Sitar", label: "Sitar" },
+	];
 
 	return (
 		<Fragment>
@@ -18,8 +34,17 @@ export default function Library(props) {
 								<p className="mxv_library_heading">MXV Library</p>
 								<p className="library_filters">Filters:</p>
 								{/* DROPDOWNS */}
-								<Dropdown optionsArray={genres}>Genres</Dropdown>
-								<Dropdown optionsArray={lyrics}>Lyrics</Dropdown>
+								<div className="library-dropdowns">
+									<div className="single-dropdowns">
+										<Dropdown optionsArray={genres}>
+											Genre
+										</Dropdown>
+										<Dropdown optionsArray={lyrics}>
+											Lyrics
+										</Dropdown>
+									</div>
+									<MultiDropdown options={instrumentsUsed} />
+								</div>
 							</div>
 
 							<div className="right_filters_section">
@@ -35,31 +60,13 @@ export default function Library(props) {
 								</div>
 							</div>
 						</div>
-
-						{/* UNCOMMENT WHEN BACKEND CONNECTED
-                        {props.songNFTs.map((song, key) => {
-							return (
-								<Fragment key={key}>
-									<div className="song_card_component">
-										<Link to={`/song-info/${song.id}`}>
-											<div className="library_cards_cover_div">
-												<img
-													src={ENTER THE IMAGE HASH HERE}
-													alt="song cover"
-												/>
-												<div className="text-break">
-													<p className="info_song_card_dashboard">#{`${song.id}`}</p>
-													<span className="info_song_card_dashboard">{`${song.songName}`}</span>
-												</div>
-											</div>
-										</Link>
-									</div>
-								</Fragment>
-							);
-						})} */}
+						{/* PAGES SECTION (UNCOMMENT WHEN BACKEND CONNECTED)*/}
+						{/* <SongPages songNFTs={searchedString.length > 0 ? searchedNFTs : filteredSongNFTs} /> */}
 					</div>
 				</div>
 			</div>
+			{/* CTA SECTION */}
+			<Cta isHomeSection={false} />
 		</Fragment>
 	);
 }

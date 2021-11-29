@@ -36,12 +36,12 @@
 	width: 98%;
 	border-radius: 16px;
 	padding: 25px;
-	text-align: center;
+	/* text-align: center; */
 	margin-bottom: 60px;
 	background-color: rgba(255, 255, 255, 0.1);
 	backdrop-filter: blur(5px);
 	display: flex;
-	align-items: center;
+	/* align-items: center; */
 	justify-content: space-between;
 	position: relative;
 	z-index: 2;
@@ -50,6 +50,7 @@
 .left_filters_section {
 	text-align: left;
 	font-family: var(--Poppins);
+	flex: 2;
 }
 
 .mxv_library_heading {
@@ -62,6 +63,15 @@
 	font-weight: 500;
 	font-size: 0.82rem;
 	margin-bottom: 8px;
+}
+
+.library-dropdowns {
+	display: flex;
+	/* align-items: center; */
+}
+
+.single-dropdowns{
+	min-width: 273px !important;
 }
 
 .right_filters_section {
@@ -91,13 +101,17 @@
 	border: 1px solid #6cc027 !important;
 }
 
+.search_bar_div:focus-within .search_button {
+	color: #6cc027 !important;
+}
+
 ::placeholder {
-	color: #ffffff;
+	color: #969696;
 	opacity: 1;
 }
 
 :-ms-input-placeholder {
-	color: #ffffff;
+	color: #969696;
 }
 
 .search_button {
@@ -107,7 +121,7 @@
 	color: #ffffff;
 }
 
-.song_card_component {
+/* .song_card_component {
 	width: 200px;
 	display: inline-block;
 	padding: 0.8em !important;
@@ -172,4 +186,4 @@
 	transition: 0.3s;
 	opacity: 1 !important;
 	cursor: pointer;
-}
+} */
