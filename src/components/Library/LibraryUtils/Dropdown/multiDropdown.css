@@ -1,0 +1,19 @@
+.library-multi-dropdown {
+	display: flex;
+	align-items: center;
+	border-radius: 20px;
+	width: fit-content;
+	border: 1px solid rgba(227, 227, 227, 0.35);
+	padding: 0px 6px 0px 16px;
+	/* max-width: 80%; */
+}
+
+.library-multi-dropdown:hover {
+	cursor: pointer;
+	border: 1px solid #6cc027;
+}
+
+.library-multi-dropdown label {
+	font-weight: 600;
+	font-size: 0.7rem;
+}
