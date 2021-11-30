@@ -18,7 +18,7 @@ function Footer() {
 								</div>
 							</div>
 							<div className="row">
-								<div className="col-12 text-md-left text-center footer_mxv">Musixverse "MXV"</div>
+								<div className="col-12 text-md-left text-center footer_mxv">Musomatic "MXV"</div>
 							</div>
 							<div className="connect_links_sm">
 								<div className="row margin4 p-0 justify-content-center">
@@ -44,7 +44,7 @@ function Footer() {
 								</div>
 								<div className="row mt-4 privacy_content_md">
 									<div className="col-12 text-md-left text-center p-0">
-										Musixverse™ is a registered trademark of Musixverse Technologies Inc. <br />
+										Musomatic™ is a registered trademark of Musomatic Technologies Inc. <br />
 										©2021 All Rights Reserved
 									</div>
 								</div>
@@ -127,7 +127,7 @@ function Footer() {
 							</div>
 							<div className="row mt-5 privacy_content justify-content-center">
 								<div className="col-10 text-md-left text-center">
-									Musixverse™ is a registered trademark of Musixverse Technologies Inc. <br />
+									Musomatic™ is a registered trademark of Musomatic Technologies Inc. <br />
 									©2021 All Rights Reserved
 								</div>
 							</div>
