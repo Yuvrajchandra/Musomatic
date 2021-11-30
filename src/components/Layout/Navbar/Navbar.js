@@ -133,16 +133,16 @@ export default function Navbar(props) {
 								<div className="row">
 									<div className="offset-md-2 col-md-8 col-12 mt-5 mb-4 horizontal_line_to_right"></div>
 								</div>
-								
+
 								<div className="row justify-content-center mt-md-5 mb-5 harmburger_menu_connect">
 									<div className="ham_menu_connect_links_md col-md-2 offset-0 col-12 mt-md-0 mt-4">
 										<div className="row justify-content-center">
 											<div className="ham_menu_heading ham_menu_connect_heading text-center">Connect with us</div>
 										</div>
 										<div className="row justify-content-center mt-3">
-											<a href="https://twitter.com/musixverse" target="_blank" rel="noopener noreferrer" className="connect_link cursor_ptr text-center col p-0"><i className="fab fa-twitter fa-lg"></i></a>
-											<a href="https://discord.gg/HSKayad3NM" target="_blank" rel="noopener noreferrer" className="connect_link cursor_ptr text-center col p-0"><i className="fab fa-discord fa-lg"></i></a>
-											<a href="https://www.instagram.com/musixverse" target="_blank" rel="noopener noreferrer" className="connect_link cursor_ptr text-center col p-0"><i className="fab fa-instagram fa-lg"></i></a>
+											<a href="#" target="_blank" rel="noopener noreferrer" className="connect_link cursor_ptr text-center col p-0"><i className="fab fa-twitter fa-lg"></i></a>
+											<a href="#" target="_blank" rel="noopener noreferrer" className="connect_link cursor_ptr text-center col p-0"><i className="fab fa-discord fa-lg"></i></a>
+											<a href="#" target="_blank" rel="noopener noreferrer" className="connect_link cursor_ptr text-center col p-0"><i className="fab fa-instagram fa-lg"></i></a>
 										</div>
 									</div>
 								</div>
