@@ -25,7 +25,7 @@ export default function ReportABug() {
 							First, <span className="color_green_bugsPage">thank you for reporting bugs!</span> Identifying, reproducing, and documenting bugs is not always fun or easy, but it’s an
 							important part of making excellent software. It can also be rewarding, as you’ll have a direct influence on the platform development. We at{" "}
 							<Link to={"/"} className="color_green_bugsPage">
-								Musixverse
+								Musomatic
 							</Link>
 							, honestly appreciate your help.
 						</div>
