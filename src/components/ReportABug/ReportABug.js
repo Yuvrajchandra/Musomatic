@@ -1,5 +1,6 @@
 import React, { useState, Fragment } from "react";
 import { Link } from "react-router-dom";
+import "./reportABug.css";
 
 export default function ReportABug() {
 	const [name, setName] = useState("");
@@ -79,8 +80,8 @@ export default function ReportABug() {
 						<div className="offset-md-1 col-md-11">
 							Report bugs by sending us an email at:
 							<br />
-							<a href="mailto:contact@musixverse.com?subject=[Bug%20Report]" target="_blank" rel="noopener noreferrer" className="report_bugs">
-								contact@musixverse.com
+							<a href="mailto:Singhyuvraj179@gmail.com?subject=[Bug%20Report]" target="_blank" rel="noopener noreferrer" className="report_bugs">
+								Singhyuvraj179@gmail.com
 							</a>
 							<br />
 							<br />
