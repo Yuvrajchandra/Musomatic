@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./dropdown.css";
+import "./socialsDropdown.css";
 
-export default function Dropdown(props) {
+export default function SocialsDropdown(props) {
 	const [buttonContent, setButtonContent] = useState("Select here");
 
 	const handleOptionSelction = (event) => {

@@ -33,6 +33,7 @@ export default function SongPages(props) {
 
 	// CREATING INDIVIDUAL CARD ELEMENTS
 	for (let i = n - 1; i >= 0; i--) {
+		// NOTE: Do not use album-cover-div and album-cover classes
 		imagesArray.push(
 			<div className="song_card_component" key={i}>
 				<Link to={`/song-info/${props.songNFTs[i].id}`}>

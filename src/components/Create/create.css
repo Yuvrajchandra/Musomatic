@@ -19,14 +19,24 @@
 	font-size: 16px;
 }
 
-.nft_content p{
+/* .nft_content {
+	position: relative;
+	z-index: 1 !important;
+} */
+
+.nft_content p,
+.small-screen-div p {
 	font-family: var(--Poppins);
 	font-weight: 500;
 	font-size: 0.8rem;
 	margin-top: 12px;
 	margin-bottom: 4px;
 }
-/* TERMS AND CONDITION */
+
+.small-screen-div {
+	display: none;
+}
+
 .terms-conditions-div {
 	width: calc(33% + 866px);
 	margin-left: 14px !important;
@@ -80,4 +90,49 @@
 
 .form-check-label {
 	cursor: pointer;
+}
+
+/* 
+NOT WORKING :\
+.form-check-input:checked[type= "checkbox"]{
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+	filter: invert(80%) sepia(57%) saturate(2454%) hue-rotate(42deg) brightness(91%) contrast(74%);
+} */
+
+@media (max-width: 1500px) {
+	.terms-conditions-div.terms-conditions-div {
+		width: calc(33% + 878px);
+		margin-left: 14px;
+	}
+}
+
+@media (max-width: 1428px) and (min-width: 960px) {
+	.terms-conditions-div.terms-conditions-div {
+		width: calc(33% + 430px);
+		margin-left: 14px;
+	}
+	.small-screen-div.small-screen-div {
+		display: flex;
+	}
+}
+
+/* ALIGN ITEMS IN COL */
+@media (max-width: 960px) {
+	.small-screen-div.small-screen-div,
+	.nft_content.nft_content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+/* changes made today */
+@media (max-width: 550px) {
+	.nft_content.nft_content.nft_content p,
+	.small-screen-div.small-screen-div.small-screen-div p {
+		font-size: 0.7rem;
+		margin-top: 10px;
+		margin-bottom: 2px;
+	}
 }

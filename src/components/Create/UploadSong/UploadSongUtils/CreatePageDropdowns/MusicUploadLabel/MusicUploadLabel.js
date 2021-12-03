@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import uploadCover from "../../../../assets/music.svg";
-import musicRecord from "../../../../assets/music_record.png";
+import uploadCover from "../../../../../../assets/music.svg";
+import musicRecord from "../../../../../../assets/music_record.png";
 import "./musicUploadLabel.css";
+import Tooltip from "../../../../../Utils/Tooltip/Tooltip";
 
-export default function MusicUploadLabel() {
+export default function MusicUploadLabel(props) {
 	const [musicUploadState, setMusicUploadState] = useState(false);
 
 	const handleSongUpload = (e) => {
@@ -12,6 +13,7 @@ export default function MusicUploadLabel() {
 		// console.log(document.getElementById("uploaded-song-name"));
 		// console.log(document.getElementById("upload-song-inp").value.split("\\").pop());
 		document.getElementById("uploaded-song-name").textContent = e.target.value.split("\\").pop();
+		props.captureSong(e);
 		setMusicUploadState(true);
 	};
 
@@ -35,10 +37,13 @@ export default function MusicUploadLabel() {
 					</div>
 				</label>
 			)}
-			<label id="uploaded-song-name" className="mt-2 ml-3">
+			<label htmlFor="upload-song-inp" id="uploaded-song-name" className="mt-2 ml-3">
 				No file chosen
 			</label>
 			<input type="file" id="upload-song-inp" accept="audio/*" className="song-inp-text mt-2 ml-3" onChange={handleSongUpload} required />
+			<span className="song_limit_tooltip">
+				<Tooltip labelText="Know more" message={`Please upload a file having size under "100 MB"`} />
+			</span>
 		</div>
 	);
 }

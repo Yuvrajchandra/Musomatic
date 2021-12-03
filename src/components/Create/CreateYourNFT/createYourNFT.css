@@ -7,9 +7,12 @@
 }
 
 .upload_cover_image_div {
+	/* if using bootstrap col in NewCreate.js  */
+	/* width: 100%; */
 	padding: 48px 42px 48px 42px;
 	width: 25%;
 	position: relative;
+	/* height: 100% !important; */
 }
 
 .create_nft_heading {
@@ -19,6 +22,10 @@
 	font-size: 1.2rem;
 	letter-spacing: 0.25px;
 	margin-bottom: 35px;
+}
+
+.image_tooltip {
+	margin-top: 100px;
 }
 
 #uploaded-img {
@@ -37,7 +44,7 @@
 	border: none !important;
 	outline: none !important;
 }
-/* Hide input field text of the image cover */
+/* Hide input field text */
 .upload_text_inp {
 	display: none;
 }
@@ -94,18 +101,18 @@
 	border-radius: 4px;
 	padding: 8px 12px;
 	font-size: 0.8rem;
-	font-weight: 300;
+	font-weight: 400;
 	font-family: var(--Poppins);
 	color: #6cc027;
 }
 
 ::placeholder {
-	color: #6e6e6e;
+	color: #6e6e6e !important;
 	opacity: 1;
 }
 
 :-ms-input-placeholder {
-	color: #6e6e6e;
+	color: #6e6e6e !important;
 }
 
 /* ON SALE RADIO BUTTONS */
@@ -142,8 +149,7 @@
 
 .form-check-input:checked[type="radio"] {
 	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%6cc027'/%3e%3c/svg%3e");
-	/*Filter the svg color in the bootstrap radio*/
-    filter: invert(80%) sepia(57%) saturate(2454%) hue-rotate(42deg) brightness(91%) contrast(74%);
+	filter: invert(80%) sepia(57%) saturate(2454%) hue-rotate(42deg) brightness(91%) contrast(74%);
 }
 
 .uploaded-img-label {
@@ -173,4 +179,39 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+@media (max-width: 1428px) and (min-width: 960px) {
+	.upload_cover_image_div {
+		width: 33%;
+	}
+}
+
+@media (max-width: 960px) {
+	.upload_cover_image_div {
+		/* width: 50%; */
+		width: 410px;
+		margin-left: 20px;
+		/* min-width: 400px; */
+	}
+}
+
+@media (max-width: 550px) {
+	.upload_cover_image_div {
+		width: 100%;
+		margin-left: 0px;
+		padding: 30px;
+	}
+
+	#uploaded-img,
+	.upload-img-div {
+		width: 100px;
+		height: 100px;
+		font-size: 0.6em;
+	}
+
+	.upload-cover-img-option {
+		width: 24px;
+		margin-bottom: 3px;
+	}
 }
