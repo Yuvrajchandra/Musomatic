@@ -89,20 +89,9 @@ function Footer() {
 								<Link to={"/"} className="footer_links col-4 footer_hover_effect text-md-left text-center">
 									<div>Home</div>
 								</Link>
-								<a
-									href="#"
-									className="footer_links col-4 footer_hover_effect text-md-left text-center"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									Musomatic Greenpaper
-								</a>
 							</div>
 
 							<div className="row footer_hover_effect_row">
-								<Link to={"/team"} className="footer_links col-4 footer_hover_effect text-md-left text-center">
-									<div>Team</div>
-								</Link>
 								<Link to={"/chat"} className="footer_links col-4 footer_hover_effect text-md-left text-center">
 									<div>Chat</div>
 								</Link>
