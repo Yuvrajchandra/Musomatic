@@ -17,3 +17,16 @@
 	font-weight: 600;
 	font-size: 0.7rem;
 }
+
+
+@media (max-width: 1040px) {
+	.library-multi-dropdown label {
+		font-size: 0.6rem;
+	}
+}
+
+@media (max-width: 675px) {
+	.library-multi-dropdown{
+		display: none;
+	}
+}

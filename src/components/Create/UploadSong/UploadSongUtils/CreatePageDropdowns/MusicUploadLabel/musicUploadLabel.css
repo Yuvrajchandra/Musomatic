@@ -46,5 +46,10 @@
 }
 
 #uploaded-song-name:hover {
-	cursor: text;
+	cursor: pointer;
+}
+
+.song_limit_tooltip {
+	position: absolute;
+	margin-top: 100px !important;
 }

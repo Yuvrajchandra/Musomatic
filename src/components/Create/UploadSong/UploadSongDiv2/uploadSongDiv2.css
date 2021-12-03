@@ -1,0 +1,170 @@
+.upload-song-div-2 {
+	width: 275px;
+	padding: 2em;
+	padding-top: 3em;
+	padding-right: 4px;
+	border-radius: 0px;
+	z-index: 7;
+}
+
+.rounded-borders {
+	border-bottom-right-radius: 12px;
+	border-top-right-radius: 12px;
+}
+
+.upload-lyrics-area {
+	resize: none;
+	color: #6cc027;
+	background-color: #323232 !important;
+	border: none;
+	font-size: 0.85rem;
+	font-family: var(--Poppins);
+	/* height: 166px !important; */
+	padding: 10px !important;
+	height: 69px !important;
+}
+
+.upload-lyrics-area:focus {
+	color: #6cc027;
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.background-area {
+	resize: none;
+	color: #6cc027;
+	background-color: #323232 !important;
+	border: none;
+	font-size: 0.85rem;
+	font-family: var(--Poppins);
+	padding: 10px !important;
+}
+
+.background-area:focus {
+	color: #6cc027;
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+/* Modal */
+.background_modal_content {
+	background-color: rgba(43, 43, 43, 0.7);
+	backdrop-filter: blur(15px);
+	border-radius: 14px;
+}
+
+.background_modal_body {
+	padding-left: 40px !important;
+	padding-right: 40px !important;
+}
+
+.background_modal_title {
+	font-family: var(--Poppins);
+	font-size: 1.1rem;
+	font-weight: 400;
+	color: #6cc027;
+}
+
+.modal_background_area {
+	color: #ccc;
+	background-color: #1a1a1a !important;
+	border-color: #747373;
+	font-size: 0.95em;
+	height: 250px !important;
+	padding: 20px;
+}
+
+.modal_background_area:focus {
+	outline: none !important;
+	box-shadow: none !important;
+	color: #ccc;
+	border-color: #747373;
+}
+
+.modal_save_btn {
+	width: 100%;
+	color: #202020;
+	border: 1px solid #6cc027;
+	border-radius: 30px;
+	outline: none;
+	background-color: #6cc027 !important;
+	box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+	font-family: var(--Poppins);
+	font-weight: 500;
+	position: relative;
+	padding: 10px 30px;
+	cursor: pointer;
+	text-align: center;
+	display: block;
+}
+
+.modal_save_btn:hover {
+	color: #202020;
+	border: 1px solid #6cc027;
+	box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+	background-color: #6cc027 !important;
+}
+
+.modal_save_btn:focus {
+	color: #202020 !important;
+	background-color: #6cc027 !important;
+	border: 1px solid #6cc027;
+	outline: none !important;
+}
+
+.lyrical-height {
+	height: 69px !important;
+}
+
+.non-lyrical-height {
+	height: 247px !important;
+}
+
+.small-screen-style {
+	border-top-left-radius: 12px;
+	border-bottom-left-radius: 12px;
+}
+
+/* <= 1424px, hide the row elems */
+@media (max-width: 1428px) {
+	.small-screen-div-2 {
+		display: none;
+	}
+}
+/* <= 1424px && >= 960px style the div */
+@media (max-width: 1428px) and (min-width: 960px) {
+	.upload-song-div-2 {
+		/* max-width: 450px; */
+		/* width: 350px; */
+		/* width: 40%; */
+		width: 430px;
+		/* width: 385px; */
+	}
+}
+
+@media (max-width: 960px) {
+	.upload-song-div-2 {
+		/* width: 55%; */
+		width: 410px;
+		margin-left: 20px;
+		/* min-width: 400px;
+		max-width: 412px; */
+		border-top-right-radius: 12px;
+		border-bottom-right-radius: 12px;
+	}
+
+	.upload-song-div-2 .div1-content {
+		border: none;
+	}
+}
+
+@media (max-width: 550px) {
+	.upload-song-div-2 {
+		min-width: none;
+		max-width: none;
+		/* min-width: 400px;
+		max-width: 412px; */
+		width: 95%;
+		margin: 0px;
+	}
+}

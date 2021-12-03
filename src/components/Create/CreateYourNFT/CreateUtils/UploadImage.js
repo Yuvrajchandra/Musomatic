@@ -1,9 +1,10 @@
 import React, { Fragment, useState } from "react";
 import uploadCover from "../../../../assets/uploadImage.svg";
+import Tooltip from "../../../Utils/Tooltip/Tooltip";
 
-export default function UploadImage() {
+export default function UploadImage(props) {
 	const [imageUploadState, setImageUploadState] = useState(false);
-    //function for preview image
+
 	const fileUploadHandler = (event) => {
 		const el = document.getElementById("uploaded-img");
 		const myMemoObj = URL.createObjectURL(event.target.files[0]);
@@ -11,6 +12,7 @@ export default function UploadImage() {
 		URL.revokeObjectURL(myMemoObj); //Manging memo leak
 		// Set image upload state to true when uploaded
 		setImageUploadState(true);
+		props.captureImage(event);
 	};
 
 	return (
@@ -31,11 +33,14 @@ export default function UploadImage() {
 			)}
 			<label className="uploaded-img-label" htmlFor="upload-image-inp" style={imageUploadState ? {} : { display: "none" }}>
 				<img id="uploaded-img" alt="uploaded file" />
-				<input type="file" id="upload-image-inp" onChange={fileUploadHandler} accept=".jpg, .jpeg, .png, .bmp, .wmv" className="upload_text_inp mb-5 mt-2" />
+				<input type="file" id="upload-image-inp" onChange={fileUploadHandler} accept=".jpg, .jpeg, .png, .bmp, .gif, .mp4, .mkv, .ogg, .wmv" className="upload_text_inp mb-5 mt-2" />
 				<label className="edit-icon-btn" htmlFor="upload-image-inp">
 					<i className="far fa-edit"></i>
 				</label>
 			</label>
+			<span className="image_tooltip">
+				<Tooltip labelText="Know more" message={`Please try to upload an image having "Square dimensions"`} />
+			</span>
 		</Fragment>
 	);
 }

@@ -3,8 +3,9 @@ import "./dropdown.css";
 
 export default function Dropdown(props) {
 	const [buttonContent, setButtonContent] = useState("Any");
-
+	const filter = props.children;
 	const handleOptionSelction = (event) => {
+		props.handleFilters(filter.toLowerCase(), event.target.textContent);
 		setButtonContent(event.target.textContent);
 	};
 
@@ -15,10 +16,10 @@ export default function Dropdown(props) {
 			</span>
 		</li>
 	));
-
+	
 	return (
 		<div className="dropdown library-dropdown">
-			<label className="dropdown-label">{props.children}:</label>
+			<label className="dropdown-label">{filter}:</label>
 
 			<button
 				className="btn dropdown-toggle"
@@ -29,7 +30,7 @@ export default function Dropdown(props) {
 			>
 				{buttonContent}
 			</button>
-
+			
 			<ul className="dropdown-menu pt-3 pb-3" aria-labelledby="dropdownMenuButton1">
 				{options}
 			</ul>

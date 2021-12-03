@@ -103,6 +103,10 @@ export default function MultiDropdown(props) {
 		}),
 	};
 
+	const handleInstrumentsChange = (selectedOption) => {
+		props.handleFilters("instrumentsUsed", selectedOption);
+	};
+
 	return (
 		<div className="library-multi-dropdown">
 			<label className="mt-2">Instruments Used: </label>
@@ -113,6 +117,8 @@ export default function MultiDropdown(props) {
 				styles={style}
 				closeMenuOnSelect={false}
 				options={props.options}
+				isOptionDisabled={(option, test) => props.instrumentsUsed.length >= 5}
+				onChange={handleInstrumentsChange}
 			/>
 		</div>
 	);

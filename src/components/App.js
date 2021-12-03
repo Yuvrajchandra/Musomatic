@@ -6,7 +6,7 @@ import "./App.css";
 // Importing components
 import Navbar from "./Layout/Navbar/Navbar";
 import HomePage from "./Homepage/HomePage";
-import Create from "./CreatePage/Create";
+import Create from "./Create/Create"
 import PageNotFound from "./PageNotFound/PageNotFound";
 import Library from "./Library/Library";
 

@@ -10,6 +10,7 @@
 }
 
 .upload-song-div-1 {
+	/* width change karo */
 	width: 420px;
 	/* Padding */
 	padding: 3em;
@@ -88,4 +89,56 @@
 
 .large-dropdown-div .dropdown {
 	width: 100%;
+}
+
+@media (max-width: 1428px) {
+	.upload-song-div-1 {
+		border-bottom-right-radius: 12px;
+		border-top-right-radius: 12px;
+		z-index: 6;
+	}
+
+	.upload-song-div-1 .div1-content {
+		border-right: 3px solid rgba(0, 0, 0, 0);
+		padding-right: 2.9rem;
+	}
+}
+
+@media (max-width: 960px) {
+	.main-upload-div {
+		margin-left: 0px;
+	}
+	.upload-song-div-1 {
+		margin-top: 48px !important;
+	}
+}
+
+@media (max-width: 550px) {
+	.upload-song-div-1 {
+		width: 100%;
+	}
+
+	.main-upload-div {
+		width: 100%;
+	}
+
+	.music-link-label {
+		font-size: 0.6rem;
+		padding: 4px 6px;
+		width: 40%;
+	}
+
+	.links-input {
+		max-width: 58%;
+	}
+
+	.upload-song-div-1 {
+		padding: 2rem 0px;
+		padding-left: 2rem;
+	}
+
+	.upload-song-div-1 .div1-content {
+		border-right: 3px solid rgba(0, 0, 0, 0);
+		padding-right: 2rem;
+	}
 }
