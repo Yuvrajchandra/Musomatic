@@ -16,6 +16,7 @@ import HomePage from "./Homepage/HomePage";
 import Library from "./Library/Library";
 import Dashboard from "./Dashboard/Dashboard";
 import Trending from "./Trending/Trending";
+import ReportABug from "./ReportABug/ReportABug";
 import Create from "./Create/Create";
 import PageNotFound from "./PageNotFound/PageNotFound";
 // Importing ENV variables
@@ -405,6 +406,7 @@ function App() {
 						)
 					}
 				/>
+				<Route exact path="/bugs" component={ReportABug} />
 				<Route path="/404" exact component={PageNotFound} />
 				<Redirect to="/404" />
 			</Switch>
