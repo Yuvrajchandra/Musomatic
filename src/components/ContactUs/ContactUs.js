@@ -1,5 +1,6 @@
 import React, { useState, Fragment } from "react";
 import { Link } from "react-router-dom";
+import "./contactUs.css";
 
 export default function ContactUs() {
 	const [name, setName] = useState("");
