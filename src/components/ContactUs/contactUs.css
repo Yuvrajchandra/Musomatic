@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+	--Poppins: "Poppins", sans-serif;
+	--Roboto: "Roboto", sans-serif;
+}
+
+@media (max-width: 490px) {
+	.contact_us_container.contact_us_container.contact_us_container {
+		padding-bottom: 400px;
+	}
+
+	.contact_us_box.contact_us_box.contact_us_box {
+		top: 95%;
+		height: 690px;
+		width: 130%;
+	}
+
+	.message_box.message_box.message_box {
+		margin-left: 30px !important;
+	}
+}
+
+@media (max-width: 768px) {
+	.contact_us_container.contact_us_container {
+		padding-bottom: 350px;
+	}
+
+	.contact_us_box.contact_us_box {
+		top: 85%;
+		height: 640px;
+	}
+
+	.contact_us_box .inputBox.inputBox {
+		left: 5%;
+	}
+
+	.message_inputs.message_inputs {
+		margin-top: 30px;
+	}
+
+	.contact_us_box .inputBox.inputBox input {
+		width: 90% !important;
+	}
+
+	.provide_email.provide_email {
+		left: 5%;
+		margin-top: 5px;
+		margin-bottom: 30px;
+	}
+
+	.message_box.message_box {
+		margin-left: 30px !important;
+	}
+}
+
+@media (max-width: 940px) {
+	.message_box.message_box {
+		margin-left: 30px;
+	}
+
+	.contact_us_box .inputBox input {
+		width: 100% !important;
+	}
+}
+
+.contact_us_container {
+	width: 100vw;
+	background-image: url("../../assets/hero.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 60px;
+	padding-top: 140px;
+	padding-bottom: 150px;
+}
+
+.contact_us {
+	width: 100%;
+	position: relative;
+	max-width: 1500px;
+	font-size: 16px;
+}
+
+.contact_us_heading {
+	font-family: var(--Poppins);
+	font-weight: 600;
+	color: #6cc027;
+	font-size: 2.8em;
+}
+
+.contact_notice {
+	font-family: var(--Poppins);
+	color: #fff;
+	font-size: 0.8em;
+}
+
+.link_to_homepage {
+	color: #6cc027;
+}
+
+.email_us {
+	font-family: var(--Poppins);
+	margin-top: 70px;
+	color: #afafaf;
+}
+
+.contact_form {
+	margin-top: 40px;
+}
+
+.contact_us_div {
+	width: 100%;
+	height: 400px !important;
+	position: relative;
+}
+
+.contact_us_box {
+	position: absolute;
+	height: 400px;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 50px;
+	background-color: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(5px);
+	border-radius: 14px;
+}
+
+.message_inputs {
+	margin-top: 5px;
+}
+
+.contact_us_box .inputBox {
+	position: relative;
+	left: 10%;
+	margin-top: 20px;
+}
+
+.contact_us_box .inputBox input {
+	width: 80%;
+	padding: 5px;
+	padding-left: 10px;
+	font-size: 18px;
+	color: #6cc027;
+	border: none;
+	border-bottom: solid #afafaf 1px !important;
+	outline: none;
+	background: transparent;
+	text-align: left;
+}
+
+.contact_us_box .inputBox label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px;
+	font-size: 1em;
+	font-family: var(--Roboto);
+	opacity: 0.5;
+	transition: 0.4s;
+	z-index: -1;
+}
+
+.contact_us_box .inputBox input:focus ~ label,
+.contact_us_box .inputBox input:not([value=""]) ~ label {
+	top: -22px;
+	left: 0;
+	color: #6cc027;
+	font-size: 12px;
+	opacity: 1;
+}
+
+.provide_email {
+	position: relative;
+	left: 10%;
+	color: #6cc027;
+	font-family: var(--Poppins);
+	font-size: 0.9em;
+}
+
+.message_box {
+	margin-left: 40px;
+}
+
+.message {
+	color: #afafaf;
+	font-family: var(--Poppins);
+	font-weight: 600;
+}
+
+textarea {
+	resize: none;
+	color: #6cc027;
+}
+
+.textarea_contact {
+	color: #6cc027;
+	background-color: #1a1a1a !important;
+	border-color: #747373;
+}
+
+.textarea_contact:focus {
+	outline: none !important;
+	box-shadow: none !important;
+	color: #6cc027;
+	border-color: #747373;
+}
+
+/* CSS for send message button */
+.send_message_btn {
+	position: relative;
+	padding: 10px 30px;
+	cursor: pointer;
+	text-align: center;
+	display: block;
+	border: 0;
+	outline: none;
+	border-radius: 4px;
+	color: #202020;
+	margin-top: 30px;
+	background-color: #6cc027;
+	font-family: var(--Poppins);
+	font-weight: 500;
+}
+
+.send_message_btn span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.send_message_btn i {
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -16px;
+	transition: 0.4s;
+	font-weight: 700;
+	margin-top: 3px;
+}
+
+.send_message_btn:hover span {
+	padding-right: 25px;
+}
+
+.send_message_btn:hover i {
+	opacity: 1;
+	right: 0;
+}
+
+.send_message_btn:focus {
+	color: #202020 !important;
+	background-color: #6cc027 !important;
+}

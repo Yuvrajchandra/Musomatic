@@ -15,6 +15,7 @@ import Loading from "./Utils/Loading/Loading";
 import HomePage from "./Homepage/HomePage";
 import Library from "./Library/Library";
 import Dashboard from "./Dashboard/Dashboard";
+import ContactUs from "./ContactUs/ContactUs";
 import Trending from "./Trending/Trending";
 import ReportABug from "./ReportABug/ReportABug";
 import Create from "./Create/Create";
@@ -407,6 +408,7 @@ function App() {
 					}
 				/>
 				<Route exact path="/bugs" component={ReportABug} />
+				<Route exact path="/contact-us" component={ContactUs} />
 				<Route path="/404" exact component={PageNotFound} />
 				<Redirect to="/404" />
 			</Switch>
