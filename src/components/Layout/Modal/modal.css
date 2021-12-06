@@ -1,0 +1,42 @@
+.react-bootstrap-modal .modal-content {
+	padding: 25px 45px 40px 45px;
+}
+
+/* Error Modal */
+.error_modal_content {
+	background-color: rgba(43, 43, 43, 0.6);
+	backdrop-filter: blur(5px);
+	border-radius: 14px;
+	font-family: var(--Poppins);
+}
+
+.error_modal_close {
+	border: none !important;
+	outline: none !important;
+	margin: 0 !important;
+	margin-top: -15px !important;
+	margin-right: -15px !important;
+	padding: 0 !important;
+	font-size: 0.9em;
+}
+
+.error_modal_title {
+	font-family: var(--Poppins);
+	font-size: 1.3em;
+	font-weight: 500;
+	color: rgb(203, 3, 0);
+}
+
+.error_modal_text {
+	font-family: var(--Poppins);
+	font-size: 0.8em;
+	font-weight: 400;
+	color: rgb(160, 160, 160);
+}
+
+.success_modal_title {
+	font-family: var(--Poppins);
+	font-size: 1.3em;
+	font-weight: 500;
+	color: #6cc027;
+}

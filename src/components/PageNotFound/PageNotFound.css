@@ -1,30 +1,13 @@
-#PageNotFoundContainer:before {
-	background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IiIgcj0iOTUlIj48c3RvcCBvZmZzZXQ9IjIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9Ijk1JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==");
-	background-size: 100%;
-	background-image: -moz-radial-gradient(center, ellipse farthest-corner, rgba(0, 0, 0, 0) 20%, #000000 95%);
-	background-image: -webkit-radial-gradient(center, ellipse farthest-corner, rgba(0, 0, 0, 0) 20%, #000000 95%);
-	background-image: radial-gradient(ellipse farthest-corner at center, rgba(0, 0, 0, 0) 20%, #000000 95%);
-	position: absolute;
-	content: "";
-	z-index: 0;
-	opacity: 0.7;
-	height: 100%;
-	width: 100%;
-	left: 0;
-	top: 0;
-}
-
-#PageNotFoundContainer:after {
-	background: url("https://s.cdpn.io/1715/noise-1.png");
-	position: absolute;
-	content: "";
-	z-index: 1;
-	opacity: 0.8;
-	filter: brightness(0.1);
-	height: 100%;
-	width: 100%;
-	left: 0;
-	top: 0;
+.page_not_found_container {
+	height: 100vh;
+	width: 100vw;
+	background-image: url("../../assets/section_2.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .wrapper {
