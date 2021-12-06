@@ -2,6 +2,7 @@
 import React, { useRef, useState, useEffect, useCallback } from "react";
 import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
 import Web3 from "web3";
+import { StreamChat } from "stream-chat";
 import axios from "axios";
 // Importing abi
 import Musomatic from "../abis/Musomatic.json";
@@ -20,6 +21,7 @@ import Trending from "./Trending/Trending";
 import ReportABug from "./ReportABug/ReportABug";
 import Create from "./Create/Create";
 import PageNotFound from "./PageNotFound/PageNotFound";
+import StreamChatComponent from "./StreamChat/StreamChatComponent";
 // Importing ENV variables
 import contractAddress from "../config/address";
 import configData from "../config/config.json";
@@ -27,10 +29,12 @@ const ENV = JSON.parse(JSON.stringify(configData));
 
 // Initializing IPFS and StreamChat clients
 const ipfsClient = require("ipfs-http-client");
+var streamClient = StreamChat.getInstance(ENV.STREAM_API_KEY);
 
 function App() {
 	var enc = new TextEncoder();
 	// Initializing states
+	const [streamAuthToken, setStreamAuthToken] = useState("");
 	const [loading, setLoading] = useState(true);
 	const [account, setAccount] = useState("");
 	const [musomatic, setMusomatic] = useState("");
@@ -43,6 +47,10 @@ function App() {
 	const [descriptionBuffer, setDescriptionBuffer] = useState(Buffer(enc.encode("-")));
 	const [maticUSD, setMaticUSD] = useState("");
 	const [maticINR, setMaticINR] = useState("");
+	// Modal States
+	const [showTradeSuccess, setShowTradeSuccess] = useState(false);
+	const [showCreateSuccess, setShowCreateSuccess] = useState(false);
+	const [showError, setShowError] = useState(false);
 	var web3 = useRef();
 
 	const ipfs = ipfsClient({ host: "ipfs.infura.io", port: 5001, protocol: "https" });
@@ -146,15 +154,41 @@ function App() {
 		}
 	}, [ethereum]);
 
+	const StreamAuth = async (account, setStreamAuthToken) => {
+		const {
+			data: { token },
+		} = await axios.post(`${ENV.SERVER_URL}/chat-signin`, {
+			account,
+		});
+
+		setStreamAuthToken(token);
+	};
+
+	const streamAuthCheck = useCallback(async (streamAuthToken, setStreamAuthToken, account) => {
+		if (streamAuthToken && account) {
+			streamClient.connectUser(
+				{
+					id: account.substring(2),
+					account: account,
+				},
+				streamAuthToken
+			);
+		}
+		if (!streamAuthToken && account) {
+			await StreamAuth(account, setStreamAuthToken);
+		}
+	}, []);
+
 	useEffect(() => {
 		async function tasks() {
 			await loadBlockchainData();
+			await streamAuthCheck(streamAuthToken, setStreamAuthToken, account);
 		}
 		tasks();
 		fetchMaticUSD();
 		fetchMaticINR();
 		// setLoading(false);
-	}, [loadBlockchainData, account]);
+	}, [loadBlockchainData, streamAuthCheck, account, streamAuthToken]);
 
 	async function captureLyrics(event) {
 		event.preventDefault();
@@ -274,7 +308,7 @@ function App() {
 						_lyricsHash = lyricsBuffer.equals(Buffer(enc.encode("-"))) ? [] : _lyricsResult[0].hash;
 						console.log("_lyricsHash:", _lyricsHash);
 
-						// musomatic.methods
+						// musixverse.methods
 						// 	.createSong(_name, _artistName, window.web3.utils.toWei(_price, "Ether"), _imgHash, _songHash, _descriptionHash, _lyricsHash, _onSale, _links, _characteristics)
 						// 	.send({ from: account })
 						// 	.on("transactionHash", () => {
@@ -298,12 +332,14 @@ function App() {
 								params: [transactionParameters],
 							});
 							setLoading(false);
-							window.location.reload();
+							setShowCreateSuccess(true);
 							return {
 								success: true,
 								status: "Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/" + txHash,
 							};
 						} catch (error) {
+							setLoading(false);
+							setShowError(true);
 							return {
 								success: false,
 								status: "Something went wrong: " + error.message,
@@ -315,6 +351,44 @@ function App() {
 		});
 	}
 
+	const createTeamChannel = async (_artistAddress, _artistName) => {
+		var selectedMembers = [streamClient.userID, _artistAddress.substring(2)];
+
+		try {
+			const newChannel = await streamClient.channel("team", _artistAddress, {
+				name: _artistName + "'s Room",
+				members: selectedMembers,
+			});
+
+			await newChannel.watch();
+
+			await newChannel.addMembers([streamClient.userID]);
+
+			selectedMembers = [];
+		} catch (error) {
+			console.log(error);
+		}
+	};
+
+	const createMessagingChannel = async (_artistAddress, _artistName) => {
+		var selectedUsers = [streamClient.userID, _artistAddress.substring(2)];
+		var _channelId = streamClient.userID.substring(0, 20).concat(_artistAddress.substring(2, 22));
+
+		try {
+			const newChannel = await streamClient.channel("messaging", _channelId, {
+				name: _artistName,
+				members: selectedUsers,
+				account: _artistAddress,
+			});
+
+			await newChannel.watch();
+
+			selectedUsers = [];
+		} catch (error) {
+			console.log(error);
+		}
+	};
+
 	async function purchaseSong(id, price, _artistAddress, _artistName) {
 		const _id = parseInt(id).toString();
 		// const _price = web3.utils.fromWei(price.toString(), 'Ether')
@@ -325,14 +399,30 @@ function App() {
 			.purchaseSong(_id)
 			.send({ from: account, value: price })
 			.once("receipt", async (receipt) => {
+				if (account !== _artistAddress) {
+					await createMessagingChannel(_artistAddress, _artistName);
+					await createTeamChannel(_artistAddress, _artistName);
+				}
 				setLoading(false);
-				window.location.reload();
+				setShowTradeSuccess(true);
 			})
 			.catch(function (error) {
-				if (error.code === 4001) {
-					window.location.reload();
-				}
+				setLoading(false);
+				setShowError(true);
+				// if (error.code === 4001) {
+				// 	window.location.reload();
+				// }
 			});
+	}
+
+	function closeTradeSuccessModal() {
+		setShowTradeSuccess(false);
+		window.location.reload();
+	}
+
+	function closeCreateSuccessModal() {
+		setShowCreateSuccess(false);
+		window.location.reload();
 	}
 
 	async function toggleOnSale(id) {
@@ -380,6 +470,17 @@ function App() {
 			<Navbar />
 			<Switch>
 				<Route exact path="/" component={HomePage} />
+				<Route
+					exact
+					path="/chat"
+					render={() =>
+						loading ? (
+							<Loading />
+						) : (
+							<StreamChatComponent account={account} client={streamClient} streamAuthToken={streamAuthToken} setStreamAuthToken={setStreamAuthToken} streamAuthCheck={streamAuthCheck} />
+						)
+					}
+				/>
 				<Route exact path="/library" render={() => (loading ? <Loading /> : <Library songNFTs={songNFTs} />)} />
 				<Route exact path="/trending" render={() => (loading ? <Loading /> : <Trending songNFTs={songNFTs} />)} />
 				<Route exact path="/dashboard" render={() => (loading ? <Loading /> : <Dashboard account={account} songNFTs={songNFTs} />)} />
@@ -403,6 +504,9 @@ function App() {
 								captureSong={captureSong}
 								maticUSD={maticUSD}
 								maticINR={maticINR}
+								showCreateSuccess={showCreateSuccess}
+								closeCreateSuccessModal={closeCreateSuccessModal}
+								showError={showError}
 							/>
 						)
 					}
