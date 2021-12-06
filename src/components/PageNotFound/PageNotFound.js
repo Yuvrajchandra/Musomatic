@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import "./pageNotFound.css";
+import "./PageNotFound.css";
 
 function PageNotFound() {
 	return (
