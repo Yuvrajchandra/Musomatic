@@ -1,5 +1,7 @@
 {
     "SERVER_URL": "https://musixverse-server.vercel.app/auth",
     "STREAM_API_KEY": "crhkw4mahmtu",
-    "BLOCKCHAIN_NETWORK_ID": 80001
+    "BLOCKCHAIN_NETWORK_ID": 80001,
+    "SPOTIFY_CLIENT_ID": "bfe84d35098b41f085842ab4e9dd1b79",
+    "SPOTIFY_CLIENT_SECRET": "4ef7926b8d8d406ca04c842170403eb0"
 }

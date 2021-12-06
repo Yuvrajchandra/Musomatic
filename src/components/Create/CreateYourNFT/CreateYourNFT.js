@@ -13,15 +13,34 @@ export default function CreateYourNFT(props) {
 				<UploadImage captureImage={props.captureImage} />
 			</div>
 			{/* INPUT FIELDS */}
-			<div className="mt-4">
+			<div className="mt-2">
 				{/* NFT DETAILS */}
+				<p>
+					ISRC Number &nbsp;{" "}
+					<Tooltip
+						labelText="Know more"
+						message="We need the ISRC number of the song to verify that you are the original creator of this piece of music. You can find this from your music distributor. It is only used for the verification process and we don't store it anywhere."
+					/>
+				</p>
+				<input
+					type="text"
+					className="input-text-field"
+					placeholder="Enter ISRC number"
+					value={props.isrcNumber}
+					onChange={(e) => {
+						props.setIsrcNumber(e.target.value);
+					}}
+					onBlur={props.fetchSongDetails}
+					required
+				/>
 				<p>Song Name</p>
 				<input
 					type="text"
 					className="input-text-field"
 					placeholder="Enter Song name"
-					ref={(name) => {
-						props.setSongName(name);
+					value={props.songName}
+					onChange={(e) => {
+						props.setSongName(e.target.value);
 					}}
 					required
 				/>
@@ -30,8 +49,9 @@ export default function CreateYourNFT(props) {
 					type="text"
 					className="input-text-field"
 					placeholder="Enter your name"
-					ref={(artistName) => {
-						props.setArtistName(artistName);
+					value={props.artistName}
+					onChange={(e) => {
+						props.setArtistName(e.target.value);
 					}}
 					required
 				/>
@@ -42,21 +62,15 @@ export default function CreateYourNFT(props) {
 					type="number"
 					className="input-text-field"
 					placeholder="Enter Price in MATIC"
-					ref={(price) => {
-						props.setPrice(price);
+					value={props.songPrice}
+					onChange={(e) => {
+						props.setPrice(e.target.value);
 					}}
 					step="0.1"
 					min="0"
 					required
 				/>
 
-				<p> ISRC Number</p>
-				<input
-					type="text"
-					className="input-text-field"
-					placeholder="Enter ISRC number"
-					required
-				/>
 				{/* ON SALE */}
 				{/*<div className="on-sale-div mt-3">
 					<p>
@@ -68,7 +82,7 @@ export default function CreateYourNFT(props) {
 					</p>
 
 					{/* ON SALE RADIOS */}
-					{/*<div>
+				{/*<div>
 						<div className="form-check form-check-inline mr-3">
 							<input className="custom-radio-box form-check-input" type="radio" name="onSaleRadioOptions" id="onSaleRadio1" value="Yes" defaultChecked />
 							<label className="form-check-label" htmlFor="onSaleRadio1">
@@ -82,7 +96,7 @@ export default function CreateYourNFT(props) {
 							</label>
 						</div>
 					</div>
-				</div>*/}
+					</div>*/}
 			</div>
 		</div>
 	);

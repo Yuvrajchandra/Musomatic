@@ -35,25 +35,25 @@ export default function UploadSong(props) {
 							<label htmlFor="spotify-music" className="music-link-label">
 								Spotify
 							</label>
-							<input type="text" id="spotify-music" className="links-input" name="spotifyLink" onChange={handleLinksChange} />
+							<input type="text" id="spotify-music" className="links-input" name="spotifyLink" value={props.links.spotifyLink} onChange={handleLinksChange} />
 						</div>
 						<div className="add-social-links mt-2">
 							<label htmlFor="apple-music" className="music-link-label">
 								Apple Music
 							</label>
-							<input type="text" id="apple-music" className="links-input" name="appleMusicLink" onChange={handleLinksChange} />
+							<input type="text" id="apple-music" className="links-input" name="appleMusicLink" value={props.links.appleMusicLink} onChange={handleLinksChange} />
 						</div>
 						<div className="add-social-links mt-2">
 							<label htmlFor="amazon-music" className="music-link-label">
 								Amazon Music
 							</label>
-							<input type="text" id="amazon-music" className="links-input" name="amazonMusicLink" onChange={handleLinksChange} />
+							<input type="text" id="amazon-music" className="links-input" name="amazonMusicLink" value={props.links.amazonMusicLink} onChange={handleLinksChange} />
 						</div>
 						<div className="add-social-links mt-2">
 							<label htmlFor="yt-music" className="music-link-label">
 								Youtube Music
 							</label>
-							<input type="text" id="yt-music" className="links-input" name="youtubeMusicLink" onChange={handleLinksChange} />
+							<input type="text" id="yt-music" className="links-input" name="youtubeMusicLink" value={props.links.youtubeMusicLink} onChange={handleLinksChange} />
 						</div>
 					</div>
 
