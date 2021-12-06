@@ -22,13 +22,13 @@ function Footer() {
 							</div>
 							<div className="connect_links_sm">
 								<div className="row margin4 p-0 justify-content-center">
-									<a href="#" target="_blank" rel="noopener noreferrer" className="connect_link cursor_ptr text-center col-1 p-0">
+									<a href="#/" target="_blank" rel="noopener noreferrer" className="connect_link cursor_ptr text-center col-1 p-0">
 										<i className="fab fa-twitter fa-lg"></i>
 									</a>
-									<a href="#" target="_blank" rel="noopener noreferrer" className="offset-1 connect_link cursor_ptr text-center col-1 p-0">
+									<a href="#/" target="_blank" rel="noopener noreferrer" className="offset-1 connect_link cursor_ptr text-center col-1 p-0">
 										<i className="fab fa-discord fa-lg"></i>
 									</a>
-									<a href="#" target="_blank" rel="noopener noreferrer" className="offset-1 connect_link cursor_ptr text-center col-1 p-0">
+									<a href="#/" target="_blank" rel="noopener noreferrer" className="offset-1 connect_link cursor_ptr text-center col-1 p-0">
 										<i className="fab fa-instagram fa-lg"></i>
 									</a>
 								</div>
@@ -127,13 +127,13 @@ function Footer() {
 								<div className="footer_heading p-0 ml-1">Connect with us</div>
 							</div>
 							<div className="row margin4 p-0 ml-1">
-								<a href="#" target="_blank" rel="noopener noreferrer" className="connect_link cursor_ptr text-center col-2 p-0">
+								<a href="#/" target="_blank" rel="noopener noreferrer" className="connect_link cursor_ptr text-center col-2 p-0">
 									<i className="fab fa-twitter fa-lg"></i>
 								</a>
-								<a href="#" target="_blank" rel="noopener noreferrer" className="connect_link cursor_ptr text-center col-2 p-0">
+								<a href="#/" target="_blank" rel="noopener noreferrer" className="connect_link cursor_ptr text-center col-2 p-0">
 									<i className="fab fa-discord fa-lg"></i>
 								</a>
-								<a href="#" target="_blank" rel="noopener noreferrer" className="connect_link cursor_ptr text-center col-2 p-0">
+								<a href="#/" target="_blank" rel="noopener noreferrer" className="connect_link cursor_ptr text-center col-2 p-0">
 									<i className="fab fa-instagram fa-lg"></i>
 								</a>
 							</div>
