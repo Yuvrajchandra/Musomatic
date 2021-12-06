@@ -43,12 +43,12 @@
 		margin: 0 auto;
 	}
 
-	.dashboard-card.dashboard-card.dashboard-card.dashboard-card {
+	/* .dashboard-card.dashboard-card.dashboard-card.dashboard-card {
 		padding: 40px 40px 40px 40px;	
-	}
+	} */
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
 	.dashboard-card.dashboard-card.dashboard-card {
 		width: 100%;
 	}
@@ -64,7 +64,7 @@
 	.dashboard-card {
 		width: 120%;
 	}
-}
+} */
 
 
 .dashboard-container {
@@ -92,8 +92,108 @@
 	border-radius: 16px;
 	padding: 40px 40px 40px 60px;	
 	/*Frosted effect*/
-	background-color: rgba(255,255,255,0.1);
+	/* background-color: rgba(255,255,255,0.1); */
+	background-color: rgba(55,50,50,0.3);
+	/* background-color: rgba(34,33,33,0.3); */
 	backdrop-filter: blur(5px);
+	display: flex;
+	justify-content: space-between;
+}
+
+.user-info-dashboard{
+	flex: 1;
+	max-width: 700px;
+}
+
+.user-account-info{
+	display: flex;
+}
+
+.dashboard-card h2{
+	color: #6cc027;
+	font-size: 1.9rem;
+	/* font-weight: 400; */
+	font-family: var(--Poppins);
+	margin-bottom: 25px;
+}
+
+.dashboard-svg{
+	width: 175px;
+}
+
+.connect-metamask-message{
+	font-family: var(--Poppins);
+	font-weight: 400;
+	font-size: 0.8rem;
+	color: #7a7a7a;
+	max-width: 70%;
+}
+
+.chat_with_artist_btn {
+	width: 40%;
+	color: #161616;
+	border: 1px solid #3b3b3b;
+	background-color: #6cc027;
+	border-radius: 30px;
+	outline: none;
+	font-family: var(--Poppins);
+	font-weight: 500;
+	position: relative;
+	padding: 10px 30px;
+	cursor: pointer;
+	text-align: center;
+	display: block;
+	transition: none !important;
+}
+
+.chat_with_artist_btn:hover,
+.chat_with_artist_btn:focus {
+	color: #161616;
+	border: 1px solid #161616 !important;
+	background-color: #5eaf1c !important;
+}
+
+.lower-section{
+	margin-top: 25px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.owned-by-user, .created-by-me{
+	border-radius: 16px;
+	/* padding: 40px 40px 40px 60px; */
+	/* background-color: rgba(129, 128, 128, 0.1); */
+	background-color: rgba(55,50,50,0.3);
+
+	backdrop-filter: blur(5px);
+	flex: 2;
+	padding-bottom: 40px;
+	text-align: center;
+	/* overflow-y: scroll; */
+	/* overflow-x: hidden; */
+}
+
+.owned-by-user h2, .created-by-me h2{
+	font-size: 1.6rem;
+	font-weight: 400;
+}
+
+.created-by-me{
+	margin-left: 25px;
+}
+
+.owned-nfts-div, .created-nfts-div{
+	max-height: 400px;
+	overflow-y: scroll;
+}
+
+.owned-nfts-div .song_card_component, .created-nfts-div .song_card_component{
+	width: 150px;
+	height: 150px;
+}
+
+.welcome-div{
+	width: fit-content;
 }
 
 .dashboard-text {
@@ -101,11 +201,41 @@
 	font-family: var(--Poppins);
 	font-size: 1.3em;
 	font-weight: 400;
-    justify-content: center !important;
-    align-items: center !important; 
-    margin-left: -30px;
+	max-width: fit-content;
+}
+
+p.dashboard-text{
+	font-size: 1.4rem;
+}
+
+p.user-address{
+	width: fit-content;
+	font-family: var(--Poppins);
+	font-size: 0.95rem;
+	font-weight: 300;
+	letter-spacing: 0.2mm;
+	/* ... */
+	text-overflow: ellipsis;   /* IE, Safari (WebKit) */
+    overflow:hidden;              /* don't show excess chars */
+    white-space:nowrap;           /* force single line */
+    width: 250px; 
+	/* max-width: 100px; */
 }
 
 .info_song_card_dashboard {
 	color: #fff !important; 
+}
+
+@media (max-width: 768px) {
+	.dashboard-card h2{
+		font-size: 1.8rem;
+	}
+
+	.user-info-dashboard{
+		max-width: 300px;
+	}
+
+	.dashboard-svg{
+		width: 150px;
+	}
 }
