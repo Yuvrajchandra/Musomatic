@@ -1,0 +1,294 @@
+.cover_card {
+	background-color: rgba(56, 56, 56, 0.4);
+	backdrop-filter: blur(5px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	text-align: center;
+	border-radius: 12px;
+	padding: 24px 24px 36px 24px;
+}
+
+.cover_card_row {
+	width: 100% !important;
+}
+
+.album_cover {
+	border-radius: 10px;
+	width: 100%;
+	min-height: 264px;
+	object-fit: cover !important;
+}
+
+button.play-btn {
+	position: absolute;
+	right: 8px;
+	bottom: 7px;
+	border-radius: 50%;
+	width: 38px;
+	height: 38px;
+	color: #6cc027;
+	background-color: rgb(75, 75, 75);
+	margin: 0px;
+	border: none;
+	cursor: pointer;
+}
+
+button.play-btn:hover {
+	background-color: rgb(82, 82, 82);
+}
+
+.not_for_sale_btn {
+	width: 100%;
+	color: #3b3b3b;
+	border: 1px solid #3b3b3b;
+	background-color: rgb(192, 192, 192);
+	border-radius: 30px;
+	outline: none;
+	font-family: var(--Poppins);
+	font-weight: 500;
+	position: relative;
+	padding: 10px 30px;
+	cursor: not-allowed !important;
+	text-align: center;
+	display: block;
+	transition: none !important;
+}
+
+.not_for_sale_btn:hover,
+.not_for_sale_btn:focus {
+	color: #3b3b3b !important;
+	border: 1px solid #3b3b3b !important;
+	background-color: rgb(192, 192, 192) !important;
+}
+
+.owned_by_you_text {
+	color: rgb(192, 192, 192) !important;
+}
+
+.chat_with_artist_btn {
+	width: 100%;
+	color: #161616;
+	border: 1px solid #3b3b3b;
+	background-color: #6cc027;
+	border-radius: 30px;
+	outline: none;
+	font-family: var(--Poppins);
+	font-weight: 500;
+	position: relative;
+	padding: 10px 30px;
+	cursor: pointer;
+	text-align: center;
+	display: block;
+	transition: none !important;
+}
+
+.chat_with_artist_btn:hover,
+.chat_with_artist_btn:focus {
+	color: #161616;
+	border: 1px solid #161616 !important;
+	background-color: #5eaf1c !important;
+}
+
+.connect_metamask_to_buy_btn {
+	font-size: 0.8em;
+	cursor: pointer !important;
+	transition: 0.3s !important;
+}
+
+.connect_metamask_to_buy_btn:hover {
+	background-color: #6cc027 !important;
+	transition: 0.3s !important;
+}
+
+.connect_metamask_to_buy_btn:focus {
+	color: #3b3b3b !important;
+	border: 1px solid #3b3b3b !important;
+	background-color: rgb(192, 192, 192) !important;
+	outline: none !important;
+}
+
+.connect_metamask_to_buy_btn:disabled,
+.connect_metamask_to_buy_btn[disabled] {
+	color: #3b3b3b !important;
+	border: 1px solid #3b3b3b !important;
+	background-color: rgb(192, 192, 192) !important;
+	outline: none !important;
+}
+
+.sale_history {
+	font-family: var(--Poppins);
+	font-weight: 500;
+	font-size: 1em;
+	color: rgb(131, 130, 130);
+}
+
+.sale_history:hover {
+	color: rgb(182, 182, 182);
+	cursor: pointer;
+}
+
+.put_up_on_sale:hover {
+	color: #09df02 !important;
+}
+
+.take_down_from_sale:hover {
+	color: #df0202 !important;
+}
+
+.cover_card_current_price {
+	font-family: var(--Poppins);
+	font-weight: 400;
+	font-size: 0.85em;
+}
+
+.edit_price {
+	color: #6cc027;
+	cursor: pointer;
+}
+
+.editPrice_modal_title {
+	font-family: var(--Poppins);
+	font-size: 1.4rem;
+	font-weight: 400;
+	color: #6cc027;
+}
+
+.created_on {
+	font-family: var(--Poppins);
+	font-weight: 400;
+	font-size: 0.8em;
+	color: rgb(161, 160, 160);
+}
+
+/********************************** Modal ********************************/
+.sale_modal_close {
+	border: none !important;
+	outline: none !important;
+	margin: 0 !important;
+	margin-top: -15px !important;
+	margin-right: -15px !important;
+	padding: 0 !important;
+	font-size: 0.9em;
+}
+
+.btn-close:focus {
+	box-shadow: none !important;
+}
+
+.sale_modal_content {
+	background-color: rgba(43, 43, 43, 0.6);
+	backdrop-filter: blur(5px);
+	border-radius: 14px;
+	/* padding: 15px 30px 25px 30px; */
+	font-family: var(--Poppins);
+}
+
+.sale_modal_header {
+	margin-bottom: 60px !important;
+}
+
+.sale_modal_title {
+	font-family: var(--Poppins);
+	font-size: 1.1rem;
+	font-weight: 400;
+	color: #6cc027;
+}
+
+.modal_green_text {
+	color: #6cc027;
+}
+
+.sale_modal_subtitle {
+	width: max-content;
+	height: 32px;
+	background-color: #3b3b3b;
+	border-radius: 8px;
+	font-size: 0.75em;
+	padding: 7px 0;
+}
+
+.sale_modal_creation {
+	width: 100%;
+	background-color: rgb(43, 43, 43);
+	border-radius: 14px;
+}
+
+.transfer_money {
+	margin-top: -2em;
+}
+
+.transfer_money_text {
+	color: #6cc027;
+}
+
+.transaction_money {
+	font-size: 1.1em;
+	color: #6cc027;
+}
+
+.transaction_money_unit {
+	font-size: 0.8em;
+	font-weight: 400;
+}
+
+.sale_responsive_border {
+	border-bottom: 2px dashed;
+	margin: 1px 0px 1px 0px !important;
+}
+
+.sale_modal_info {
+	font-family: var(--Poppins);
+	font-size: 0.8em;
+	color: rgb(131, 130, 130);
+}
+
+.sale_modal_header_details {
+	margin: 25px 10px;
+	padding: 0 !important;
+}
+
+.sale_modal_artist_address {
+	font-size: 0.8rem;
+}
+
+@media (min-width: 1200px) {
+	.sale_history_section_mobile {
+		display: none;
+	}
+}
+
+@media (max-width: 1200px) {
+	.sale_modal_header {
+		margin-bottom: 35px !important;
+	}
+
+	.sale_modal_subheader {
+		align-items: center;
+	}
+
+	.sale_history_section {
+		display: none;
+	}
+
+	.sale_history_section_mobile {
+		display: flex;
+		flex-direction: column !important;
+	}
+
+	.sale_history_subsection {
+		display: flex !important;
+		justify-content: center !important;
+	}
+
+	.sale_responsive_border {
+		border-bottom: none;
+	}
+}
+
+@media (max-width: 350px) {
+	.sale_modal_subtitle {
+		font-size: 0.65rem !important;
+	}
+}

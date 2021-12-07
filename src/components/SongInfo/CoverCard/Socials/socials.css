@@ -1,0 +1,15 @@
+.social-links {
+    display: flex;
+    justify-content: space-evenly !important;
+}
+
+.social-links img {
+    width: 20px;
+}
+
+.listenOn-text {
+    font-family: var(--Poppins);
+	font-weight: 500;
+	font-size: 0.8em;
+    color: rgb(131, 130, 130);
+}

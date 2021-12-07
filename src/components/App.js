@@ -17,6 +17,7 @@ import HomePage from "./Homepage/HomePage";
 import Library from "./Library/Library";
 import Dashboard from "./Dashboard/Dashboard";
 import ContactUs from "./ContactUs/ContactUs";
+import SongInfo from "./SongInfo/SongInfo";
 import Trending from "./Trending/Trending";
 import ReportABug from "./ReportABug/ReportABug";
 import Create from "./Create/Create";
@@ -478,6 +479,28 @@ function App() {
 							<Loading />
 						) : (
 							<StreamChatComponent account={account} client={streamClient} streamAuthToken={streamAuthToken} setStreamAuthToken={setStreamAuthToken} streamAuthCheck={streamAuthCheck} />
+						)
+					}
+				/>
+				<Route
+					exact
+					path="/song-info/:songId"
+					render={(props) =>
+						loading ? (
+							<Loading />
+						) : (
+							<SongInfo
+								{...props}
+								account={account}
+								songNFTs={songNFTs}
+								purchaseSong={purchaseSong}
+								toggleOnSale={toggleOnSale}
+								updatePrice={updatePrice}
+								maticUSD={maticUSD}
+								maticINR={maticINR}
+								showTradeSuccess={showTradeSuccess}
+								closeTradeSuccessModal={closeTradeSuccessModal}
+							/>
 						)
 					}
 				/>

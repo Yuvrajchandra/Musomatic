@@ -1,0 +1,113 @@
+.song_description_box {
+	display: flex;
+	flex-direction: column;
+}
+
+.song_description_box h2 {
+	font-family: var(--Poppins);
+	font-weight: 300;
+	font-size: 3em;
+}
+
+@media (max-width: 500px) {
+	.song_description_box.song_description_box h2 {
+		font-size: 2.2em;
+	}
+}
+
+.artist_name {
+	color: #6cc027;
+	font-family: var(--Poppins);
+	font-size: 0.95rem;
+}
+
+.current_owner_address {
+	font-family: var(--Poppins);
+	font-size: 0.8rem;
+}
+
+.about_song_heading {
+	color: #6cc027;
+	font-family: var(--Roboto);
+	font-size: 1.05rem;
+}
+
+p.detail_label {
+	font-family: var(--Poppins);
+	font-weight: 500;
+	font-size: 0.9rem;
+	margin-bottom: 5px;
+}
+
+p.detail_label span {
+	font-weight: 300;
+	color: #6cc027;
+}
+
+/**************************************************************************/
+/****************************   BACKGROUND   ******************************/
+/**************************************************************************/
+
+.background_info_div {
+	border: 1px solid #e3e3e3;
+	padding: 16px;
+	border-radius: 10px;
+	width: 100%;
+	height: 100% !important;
+}
+
+.background_desc {
+	width: 100%;
+	display: inline-block;
+	font-size: 0.75rem;
+	font-weight: 300;
+	font-family: var(--Poppins);
+	line-height: 18px;
+}
+
+.background_desc a {
+	text-decoration: none;
+	color: #6cc027;
+}
+
+.background_desc a:hover {
+	color: #458f08;
+}
+
+/* Blur background */
+.background_desc_blur {
+	filter: blur(8px);
+	-webkit-user-select: none !important;
+	-moz-user-select: none !important;
+	-ms-user-select: none !important;
+	user-select: none !important;
+}
+
+.green_read_more {
+	color: #6cc027;
+	cursor: pointer;
+}
+
+.center_within_background_desc {
+	position: absolute;
+	color: #6cc027;
+	margin-top: 17px !important;
+}
+
+.modal_complete_background_area {
+	padding: 20px;
+	color: #ccc;
+	background-color: #1a1a1a;
+	border: 1px solid #747373;
+	border-radius: 4px;
+}
+
+.background_unavailable_row {
+	width: 100%;
+	margin-top: 14px;
+	margin-bottom: 4px;
+}
+
+.background_unavailable_text {
+	padding: 0px !important;
+}
