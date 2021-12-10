@@ -996,6 +996,8 @@ body {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+	overflow-y: scroll;
+	max-height: 200px;
 }
 
 .team-channel-list > p {

@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import "./footer.css";
-import footerLogo from "../../../assets/logo_nav_foot.svg";
+import footerLogo from "../../../assets/logo_nav_foot.png";
 import hallmark from "../../../assets/hallmark.png";
 // file deepcode ignore no-mixed-spaces-and-tabs:
 
@@ -12,13 +12,13 @@ function Footer() {
 				<div className="footer_box">
 					<div className="row justify-content-center">
 						<div className="col-md-3 col-12">
-							<div className="row">
+							<div className="row mt-4 mb-4">
 								<div className="logo_col offset-md-0 col-md-4 offset-4 col-4 text-md-left text-center">
-									<img src={footerLogo} alt="logo" />
+									<img src={footerLogo} alt="logo" width="150" />
 								</div>
 							</div>
 							<div className="row">
-								<div className="col-12 text-md-left text-center footer_mxv">Musomatic "MXV"</div>
+								<div className="col-12 text-md-left text-center footer_mxv">Musomatic "MSM"</div>
 							</div>
 							<div className="connect_links_sm">
 								<div className="row margin4 p-0 justify-content-center">
@@ -44,7 +44,7 @@ function Footer() {
 								</div>
 								<div className="row mt-4 privacy_content_md">
 									<div className="col-12 text-md-left text-center p-0">
-										Musomatic™ is a registered trademark of Musomatic Technologies Inc. <br />
+										Musomatic™ will be a registered trademark of Musomatic Technologies Inc. <br />
 										©2021 All Rights Reserved
 									</div>
 								</div>
