@@ -15,6 +15,7 @@ import ScrollToTop from "./Utils/ScrollToTop/ScrollToTop";
 import Loading from "./Utils/Loading/Loading";
 import HomePage from "./Homepage/HomePage";
 import Library from "./Library/Library";
+import Faq from "./Faq/Faq";
 import Dashboard from "./Dashboard/Dashboard";
 import ContactUs from "./ContactUs/ContactUs";
 import SongInfo from "./SongInfo/SongInfo";
@@ -309,14 +310,6 @@ function App() {
 						_lyricsHash = lyricsBuffer.equals(Buffer(enc.encode("-"))) ? [] : _lyricsResult[0].hash;
 						console.log("_lyricsHash:", _lyricsHash);
 
-						// musixverse.methods
-						// 	.createSong(_name, _artistName, window.web3.utils.toWei(_price, "Ether"), _imgHash, _songHash, _descriptionHash, _lyricsHash, _onSale, _links, _characteristics)
-						// 	.send({ from: account })
-						// 	.on("transactionHash", () => {
-						// 		setLoading(false);
-						// 		window.location.reload();
-						// 	});
-
 						// Set up your Ethereum transaction
 						const transactionParameters = {
 							to: contractAddress, // Required except during contract publications.
@@ -534,6 +527,7 @@ function App() {
 						)
 					}
 				/>
+				<Route exact path="/faq" component={Faq} />
 				<Route exact path="/bugs" component={ReportABug} />
 				<Route exact path="/contact-us" component={ContactUs} />
 				<Route path="/404" exact component={PageNotFound} />

@@ -2,7 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./navbar.css";
 import logo_navbar from "../../../assets/logo_navbar.png";
-import hamburgerLogoMXV from "../../../assets/logo_nav_foot.svg";
+import hamburgerLogoMXV from "../../../assets/logo_nav_foot.png";
 
 export default function Navbar(props) {
 	window.onscroll = function () {
@@ -29,7 +29,7 @@ export default function Navbar(props) {
 			</div>
 			<div className="d-flex w-50 order-0">
 				<Link to={"/"}>
-					<img src={logo_navbar} alt="logo" className="mb-md-1 mb-3 cursor_ptr nav_logo" width="80" />
+					<img src={logo_navbar} alt="logo" className="mb-md-1 mb-3 cursor_ptr nav_logo" width="150" />
 				</Link>
 			</div>
 			<div className="justify-content-center order-2" id="nav_center_links">
@@ -72,19 +72,19 @@ export default function Navbar(props) {
 						<div className="hamburger_container">
 							<div className="menu_box">
 								<div className="row">
-									<div className="offset-lg-1 col-lg-2 offset-md-1 col-md-2 offset-0 col-12 logo_div_anim">
+									<div className="mt-4 offset-lg-1 col-lg-2 offset-md-1 col-md-2 offset-0 col-12 logo_div_anim">
 										<Link to={"/"} onClick={closeNavbar}>
 											<img src={hamburgerLogoMXV} alt="White logo" className="hamburger_logo_mxv" />
 										</Link>
 									</div>
-									<div className="offset-lg-4 col-lg-2 offset-md-4 col-md-2 col-6 mt-md-5 mt-1 create_left_anim">
+									<div className=" offset-lg-4 col-lg-2 offset-md-4 col-md-2 col-6 mt-5 create_left_anim">
 										<div className="mt-md-4 quick_hamburger_nav_div">
 											<Link to={"/create"} onClick={closeNavbar} className="quick_hamburger_nav">
 												Create
 											</Link>
 										</div>
 									</div>
-									<div className="offset-lg-0 col-lg-2 offset-md-0 col-md-2 col-6 mt-md-5 mt-1 dashboard_left_anim">
+									<div className="offset-lg-0 col-lg-2 offset-md-0 col-md-2 col-6 mt-5 dashboard_left_anim">
 										<div className="mt-md-4 quick_hamburger_nav_div">
 											<Link to={"/dashboard"} onClick={closeNavbar} className="quick_hamburger_nav">
 												Dashboard
@@ -112,11 +112,6 @@ export default function Navbar(props) {
 													<div className="row ham_menu_hover_effect_row justify-content-center">
 														<Link to={"/faq"} onClick={closeNavbar} className="ham_menu_link ham_menu_hover_effect text-center">
 															<div>FAQ</div>
-														</Link>
-													</div>
-													<div className="row ham_menu_hover_effect_row justify-content-center">
-														<Link to={"/team"} onClick={closeNavbar} className="ham_menu_link ham_menu_hover_effect text-center">
-															<div>Team</div>
 														</Link>
 													</div>
 												</div>

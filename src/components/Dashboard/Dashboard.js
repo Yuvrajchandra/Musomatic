@@ -69,13 +69,14 @@ export default function Dashboard(props) {
 												</div>
 											</div>
 											<span className="connect-metamask-message">
-												<i className="fas fa-info-circle"></i>{`	`}
-												You must connect to metamask to buy and sell NFTs on Musixverse
+												<i className="fas fa-info-circle"></i>
+												{`	`}
+												You must connect to metamask to buy and sell NFTs on Musomatic
 											</span>
 										</div>
 									)}
 								</div>
-								<img className="dashboard-svg" src={dashboardSvg} alt="dashboard music svg"/>
+								<img className="dashboard-svg" src={dashboardSvg} alt="dashboard music svg" />
 							</div>
 						</div>
 					</div>
@@ -111,14 +112,15 @@ export default function Dashboard(props) {
 									) : (
 										// <h5 className="mt-3 p-0">You don't own any NFTs yet. Go get one!</h5>
 										<span className="connect-metamask-message mt-3">
-											<i className="fas fa-info-circle"></i>{`	`}
+											<i className="fas fa-info-circle"></i>
+											{`	`}
 											You don't own any NFTs yet. Go get one!
 										</span>
 									)}
 								</div>
 							</div>
 						</div>
-					{/* <br />
+						{/* <br />
 					<br /> */}
 						<div className="created-by-me">
 							<div className="mt-5 p-0 text-center">
@@ -149,7 +151,8 @@ export default function Dashboard(props) {
 										})
 									) : (
 										<span className="connect-metamask-message mt-3">
-											<i className="fas fa-info-circle"></i>{`	`}
+											<i className="fas fa-info-circle"></i>
+											{`	`}
 											You haven't created any NFTs. Go create one!
 										</span>
 									)}
