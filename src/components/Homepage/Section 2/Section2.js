@@ -4,7 +4,7 @@ import "./section2.css";
 export default function Section2(){
     return(
         <Fragment>
-            <div className="section2-container">
+            <div className="section2-container row m-0 justify-content-center">
                 <div className="section2-box">
                     <div className="section2-bg-div">
                         <div className="section2-intro">
