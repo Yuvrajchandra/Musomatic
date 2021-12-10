@@ -3,7 +3,7 @@ import "./section3.css";
 import Button from "../../Layout/Button/Button";
 import dashboardImage from "../../../assets/to-delete3.jpg";
 
-export default function Section2(){
+export default function Section3(){
     return(
         <Fragment>
             <div className="section3-container">
