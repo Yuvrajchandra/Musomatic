@@ -1,18 +1,16 @@
 import React, { Fragment } from "react";
 import "./section3.css";
 import Button from "../../Layout/Button/Button";
-import dashboardImage from "../../../assets/to-delete3.jpg";
 
 export default function Section3(){
     return(
         <Fragment>
-            <div className="section3-container">
+            <div className="section3-container row m-0 justify-content-center">
                 <div className="section3-card d-flex">
-                    <div className="col">
-                        <img className="dashboard-preview" src={dashboardImage} alt="dashboard preview" />
+                    <div className="dashboard-preview">
                     </div>
                     <div className="col d-flex flex-column align-items-end m-0 p-0">
-                        <div className="d-flex flex-column grey-sub-card ps-4">
+                        <div className="d-flex flex-column grey-sub-card">
                             <div>
                                 <h3><strong>Creating NFT <br/>is so easy</strong></h3>
                             </div>
