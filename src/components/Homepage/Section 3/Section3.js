@@ -24,12 +24,12 @@ export default function Section2(){
                                     that matter the most.
                                 </p>
                             </div>
-                            <div className="d-flex mt-3">
+                            <div className="d-flex mt-4">
                                 <div className="me-2">
-                                    <Button className="dashboard-button">Create NFT</Button>
+                                    <Button>Create</Button>
                                 </div>
                                 <div className="ms-2">    
-                                    <Button className="dashboard-button">Explore NFTs</Button>
+                                    <Button>Library</Button>
                                 </div>    
                             </div> 
                         </div>
