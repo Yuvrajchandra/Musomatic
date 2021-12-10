@@ -15,10 +15,6 @@
 	border-radius: 20px;
 }
 
-.grey-sub-card{
-	width: 30%;
-}
-
 .grey-sub-card h3{
 	color: #6EC025;
 	/* width: 300px; */
@@ -30,7 +26,7 @@
 }
 
 .dashboard-preview{
-	position: absolute;
+	/* position: absolute; */
 	/* z-index: 2; */
 	/* temporary image preview */
 	/* background-image: url("../../../assets/to-delete3.jpg"); */
