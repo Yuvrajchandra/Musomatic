@@ -25,10 +25,10 @@ export default function Section2(){
                                 </p>
                             </div>
                             <div className="d-flex mt-4">
-                                <div className="me-2">
+                                <div className="me-2 flex-fill">
                                     <Button>Create</Button>
                                 </div>
-                                <div className="ms-2">    
+                                <div className="ms-2 flex-fill">    
                                     <Button>Library</Button>
                                 </div>    
                             </div> 
