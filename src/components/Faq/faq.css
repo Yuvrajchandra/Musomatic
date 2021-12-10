@@ -1,0 +1,213 @@
+/**************************************************************************/
+/*******************************    FAQ    ********************************/
+/**************************************************************************/
+
+@media (max-width: 768px) {
+	.faq_container.faq_container.faq_container {
+		padding: 30px;
+		padding-top: 120px;
+	}
+
+	.faq_nav_link_box.faq_nav_link_box {
+		width: 100%;
+		max-width: 1500px;
+	}
+}
+
+@media (max-width: 500px) {
+	.faq_heading.faq_heading {
+		font-size: 1.5em;
+		margin-bottom: 40px;
+	}
+
+	.faq_card.faq_card {
+		padding: 40px 10px 60px 10px;
+	}
+
+	.faq_section_heading.faq_section_heading {
+		font-size: 1em;
+		margin-left: 0px;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.accordion-button.accordion-button {
+		padding: 20px 0px 20px 0px;
+		color: #fff;
+		font-family: var(--Poppins);
+		font-size: 14px;
+		font-weight: 500;
+	}
+
+	.accordion-body.accordion-body {
+		text-align: left;
+		margin: 0px;
+		padding: 0px;
+		padding-top: 16px;
+		padding-bottom: 16px;
+		color: #ddd;
+		font-family: var(--Roboto) !important;
+		font-size: 0.9em !important;
+		word-wrap: break-word;
+	}
+}
+
+.faq_container {
+	width: 100vw;
+	background-image: url("../../assets/hero.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 140px 60px 100px 60px;
+}
+
+.faq_box {
+	width: 100%;
+	position: relative;
+	max-width: 1500px;
+	font-size: 16px;
+}
+
+.faq_heading {
+	color: #fff;
+	font-family: var(--Poppins);
+	font-size: 2em;
+	font-weight: 400;
+	margin-bottom: 60px;
+}
+
+.width100 {
+	width: 100% !important;
+}
+
+.faq_nav_link_box {
+	border-radius: 16px;
+	padding: 40px 30px 40px 30px;
+	text-align: center;
+	max-width: 285px;
+}
+
+.faq_nav_link_btn {
+	text-align: left;
+	font-size: 1em;
+	font-weight: 400;
+	color: #ddd;
+	background: transparent !important;
+}
+
+.faq_nav_link_btn:hover {
+	color: #6cc027 !important;
+}
+
+.faq_nav_link_btn.active {
+	color: #6cc027 !important;
+	border-left: 4px solid #6cc027;
+	border-radius: 0px !important;
+}
+
+.faq_card {
+	width: 100%;
+	/* min-height: 650px !important; */
+	border-radius: 16px;
+	padding: 60px 30px 80px 30px;
+	text-align: center;
+}
+
+.faq_section_heading {
+	color: #6cc027;
+	font-family: var(--Poppins);
+	font-size: 1.6em;
+	font-weight: 400;
+	margin-left: 40px;
+}
+
+.accordion_container {
+	margin-top: 40px;
+}
+
+.accordion-item {
+	background-color: transparent !important;
+	border: none !important;
+}
+
+.accordion-button {
+	width: 100%;
+	text-align: left;
+	outline: none !important;
+	box-shadow: none !important;
+	background: transparent !important;
+	border: none !important;
+	border-bottom: 1px solid #6cc027 !important;
+	padding: 20px 12px 20px 12px;
+	color: #fff;
+	font-family: var(--Poppins);
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.accordion-button:active {
+	outline: none !important;
+	box-shadow: none !important;
+	background: transparent !important;
+	color: #fff;
+}
+
+.accordion-button:hover {
+	color: #6cc027 !important;
+}
+
+.accordion-button:not(.collapsed) > .plus {
+	display: none;
+}
+
+.accordion-button:not(.collapsed) > .minus {
+	display: initial;
+}
+
+.accordion-button:not(.collapsed) {
+	color: #6cc027 !important;
+	background: #fcf4eb;
+	border-color: #6cc027;
+}
+
+.accordion-button::after {
+	background-image: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+	background-image: none;
+}
+
+.plus {
+	color: #6cc027;
+	margin-right: 15px;
+}
+
+.minus {
+	color: #6cc027;
+	margin-right: 15px;
+	display: none;
+}
+
+.accordion-body {
+	text-align: left;
+	margin-left: 20px;
+	padding-top: 16px;
+	padding-bottom: 20px;
+	color: #fff;
+	font-family: var(--Roboto) !important;
+	font-size: 1em !important;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+	border-bottom-right-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
+}
+
+.green_subhead {
+	color: #6cc027 !important;
+	font-weight: 500;
+}
