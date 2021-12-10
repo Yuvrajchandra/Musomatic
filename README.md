@@ -74,7 +74,7 @@ Just run: `truffle test`
 
 -   Create Song:
 
-    `contract.createSong("Yay!", "Sommaiya Angrish", 2, "imageHash123", "songHash123", false, ["spotifyLink.com", "appleLink.com", "amznLink.com"], ["Pop", ["Guitar", "Drums"], "A good day", "Non-Rhyme", "Metaphorical", "Mids heavy", "Digital", true])`
+    ```contract.createSong("Yay!", "Sommaiya Angrish", 2, "imageHash123", "songHash123", false, ["spotifyLink.com", "appleLink.com", "amznLink.com"], ["Pop", ["Guitar", "Drums"], "A good day", "Non-Rhyme", "Metaphorical", "Mids heavy", "Digital", true])```
 
 -   To check the created song:
     `contract.songs(0)`
