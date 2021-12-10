@@ -2,7 +2,7 @@
 
 Musomatic is a decentralized platform where musicians can put up music/songs as NFTs. These NFTs can then be traded and each time an NFT gets traded, the musician will receive a certain percent of the trade as royalty! The main essence of the platform is to uplift music creators as they really do not get enough recognition and monetary benefits or royalties from the current available sources.
 
-Website link- <a href="pushpit07.github.io/musomatic/">Musomatic</a>
+Website link- <a href="https://pushpit07.github.io/Musomatic/">Musomatic</a>
 
 ## Tech Used
 
@@ -17,12 +17,11 @@ Website link- <a href="pushpit07.github.io/musomatic/">Musomatic</a>
 ### Smart Contract and Backend
 <p align="left">
 <img src = "https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"/>
-<img src = "https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black"/>
 <img src = "https://img.shields.io/badge/Solidity-e6e6e6?style=for-the-badge&logo=solidity&logoColor=black"/>
 </p>
 
 ### Other
-<p>IPFS, Ganache, Truffle, Web3.js, Metamask, Infura, Polkadot, Elasticsearch (for future uses)</p>
+<p>IPFS, Ganache, Truffle, Web3.js, Metamask, Infura, Moralis, Zapier, Stream</p>
 
 ## How to setup
 
