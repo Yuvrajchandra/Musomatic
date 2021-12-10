@@ -45,7 +45,7 @@ export default function Dashboard(props) {
 												</div>
 												{/* <div className="col-md-10 col-12 p-0 mt-md-0 mt-4 dashboard-text align-self-end">{props.account}</div> */}
 											</div>
-											{props.songNFTs.filter(isOwner).length > 0 ? (
+											{/* {props.songNFTs.filter(isOwner).length > 0 ? ( */}
 												<Link to={"/chat"}>
 													<button className="btn btn-primary shadow-sm chat_with_artist_btn mt-3">
 														<span>
@@ -53,7 +53,7 @@ export default function Dashboard(props) {
 														</span>
 													</button>
 												</Link>
-											) : null}
+											{/* ) : null} */}
 										</Fragment>
 									) : (
 										<div>
