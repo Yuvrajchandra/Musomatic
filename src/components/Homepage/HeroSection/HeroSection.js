@@ -11,7 +11,7 @@ export default function HeroSection() {
 				<div className="hero-box">
 					<div className="row justify-content-center hero-row">
 						{/* INTRO CARD */}
-						<div className="intro-card">
+						<div className="intro-card glass_effect glass_effect_border">
 							<span className="intro-text">
 								<div className="row justify-content-center">
 									<div className="col-lg-5 col-md-10">Become a part of the NFT Music Revolution</div>

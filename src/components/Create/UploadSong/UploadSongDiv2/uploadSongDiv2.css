@@ -5,6 +5,8 @@
 	padding-right: 4px;
 	border-radius: 0px;
 	z-index: 7;
+	border-left: none !important;
+	border-right: none !important;
 }
 
 .rounded-borders {

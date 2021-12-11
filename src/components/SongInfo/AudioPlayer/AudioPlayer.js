@@ -82,7 +82,7 @@ const AudioPlayer = (props) => {
 	};
 
 	return (
-		<div className="audioPlayer">
+		<div className="audioPlayer glass_effect">
 			<audio ref={audioPlayer} src={props.source} preload="metadata"></audio>
 
 			<div className="row p-3 audioPlayer_row">

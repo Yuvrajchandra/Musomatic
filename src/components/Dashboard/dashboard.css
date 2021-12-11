@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 :root {
 	--Poppins: "Poppins", sans-serif;
@@ -66,7 +66,6 @@
 	}
 } */
 
-
 .dashboard-container {
 	width: 100vw;
 	background-image: url("../../assets/hero.svg");
@@ -77,7 +76,7 @@
 	justify-content: center;
 	align-items: center;
 	padding: 50px;
-	padding-top: 120px;
+	padding-top: 140px;
 	padding-bottom: 120px;
 }
 
@@ -90,26 +89,22 @@
 
 .dashboard-card {
 	border-radius: 16px;
-	padding: 40px 40px 40px 60px;	
-	/*Frosted effect*/
-	/* background-color: rgba(255,255,255,0.1); */
-	background-color: rgba(55,50,50,0.3);
-	/* background-color: rgba(34,33,33,0.3); */
-	backdrop-filter: blur(5px);
+	padding: 40px 40px 40px 60px;
 	display: flex;
 	justify-content: space-between;
 }
 
-.user-info-dashboard{
+.user-info-dashboard {
 	flex: 1;
 	max-width: 700px;
 }
 
-.user-account-info{
+.user-account-info {
 	display: flex;
+	width: 100%;
 }
 
-.dashboard-card h2{
+.dashboard-card h2 {
 	color: #6cc027;
 	font-size: 1.9rem;
 	/* font-weight: 400; */
@@ -117,11 +112,11 @@
 	margin-bottom: 25px;
 }
 
-.dashboard-svg{
+.dashboard-svg {
 	width: 175px;
 }
 
-.connect-metamask-message{
+.connect-metamask-message {
 	font-family: var(--Poppins);
 	font-weight: 400;
 	font-size: 0.8rem;
@@ -129,43 +124,21 @@
 	max-width: 70%;
 }
 
-.chat_with_artist_btn {
-	width: 40%;
-	color: #161616;
-	border: 1px solid #3b3b3b;
-	background-color: #6cc027;
-	border-radius: 30px;
-	outline: none;
-	font-family: var(--Poppins);
-	font-weight: 500;
-	position: relative;
-	padding: 10px 30px;
-	cursor: pointer;
-	text-align: center;
-	display: block;
-	transition: none !important;
+.user-info-dashboard .chat_with_artist_btn {
+	width: 60%;
 }
 
-.chat_with_artist_btn:hover,
-.chat_with_artist_btn:focus {
-	color: #161616;
-	border: 1px solid #161616 !important;
-	background-color: #5eaf1c !important;
-}
-
-.lower-section{
-	margin-top: 25px;
+.lower-section {
+	margin-top: 30px;
 	display: flex;
 	justify-content: space-between;
 }
 
-.owned-by-user, .created-by-me{
+.owned-by-user,
+.created-by-me {
 	border-radius: 16px;
 	/* padding: 40px 40px 40px 60px; */
 	/* background-color: rgba(129, 128, 128, 0.1); */
-	background-color: rgba(55,50,50,0.3);
-
-	backdrop-filter: blur(5px);
 	flex: 2;
 	padding-bottom: 40px;
 	text-align: center;
@@ -173,27 +146,30 @@
 	/* overflow-x: hidden; */
 }
 
-.owned-by-user h2, .created-by-me h2{
+.owned-by-user h2,
+.created-by-me h2 {
 	font-size: 1.6rem;
 	font-weight: 400;
 }
 
-.created-by-me{
+.created-by-me {
 	margin-left: 25px;
 }
 
-.owned-nfts-div, .created-nfts-div{
+.owned-nfts-div,
+.created-nfts-div {
 	max-height: 400px;
 	overflow-y: scroll;
 }
 
-.owned-nfts-div .song_card_component, .created-nfts-div .song_card_component{
+.owned-nfts-div .song_card_component,
+.created-nfts-div .song_card_component {
 	width: 150px;
 	height: 150px;
 }
 
-.welcome-div{
-	width: fit-content;
+.welcome-div {
+	width: 100%;
 }
 
 .dashboard-text {
@@ -204,38 +180,38 @@
 	max-width: fit-content;
 }
 
-p.dashboard-text{
+p.dashboard-text {
 	font-size: 1.4rem;
 }
 
-p.user-address{
+p.user-address {
 	width: fit-content;
 	font-family: var(--Poppins);
 	font-size: 0.95rem;
 	font-weight: 300;
 	letter-spacing: 0.2mm;
 	/* ... */
-	text-overflow: ellipsis;   /* IE, Safari (WebKit) */
-    overflow:hidden;              /* don't show excess chars */
-    white-space:nowrap;           /* force single line */
-    width: 250px; 
+	/* text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 250px; */
 	/* max-width: 100px; */
 }
 
 .info_song_card_dashboard {
-	color: #fff !important; 
+	color: #fff !important;
 }
 
 @media (max-width: 768px) {
-	.dashboard-card h2{
+	.dashboard-card h2 {
 		font-size: 1.8rem;
 	}
 
-	.user-info-dashboard{
+	.user-info-dashboard {
 		max-width: 300px;
 	}
 
-	.dashboard-svg{
+	.dashboard-svg {
 		width: 150px;
 	}
 }

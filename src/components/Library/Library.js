@@ -113,17 +113,19 @@ export default function Library(props) {
 	// Logic for searched songs and ids
 	const l = filteredSongNFTs.length;
 	const searchedNFTs = [];
-	// Important !!! Need to add a tooltip to not to search '#' in ids. 
+	// Important !!! Need to add a tooltip to not to search '#' in ids.
 	// Also, currently our search is case sensitive so we either need to change it or inform the user
 	if (searchedString.length === 0) {
 		// if searchedString is empty, do nothing
-	}else if (!isNaN(searchedString) && !isNaN(parseFloat(searchedString))) {	//if searched string is an id
+	} else if (!isNaN(searchedString) && !isNaN(parseFloat(searchedString))) {
+		//if searched string is an id
 		for (let i = 0; i < l; i++) {
 			if (parseInt(filteredSongNFTs[i].id) === parseInt(searchedString)) searchedNFTs.push(filteredSongNFTs[i]);
 		}
-	} else {	//else, search for artists or songs in our newNFT array
+	} else {
+		//else, search for artists or songs in our newNFT array
 		for (let i = 0; i < l; i++) {
-			if (filteredSongNFTs[i].songName.toLowerCase().includes(searchedString.toLowerCase()) || filteredSongNFTs[i].artistName.toLowerCase().includes(searchedString.toLowerCase())) 
+			if (filteredSongNFTs[i].songName.toLowerCase().includes(searchedString.toLowerCase()) || filteredSongNFTs[i].artistName.toLowerCase().includes(searchedString.toLowerCase()))
 				searchedNFTs.push(filteredSongNFTs[i]);
 		}
 	}
@@ -138,7 +140,7 @@ export default function Library(props) {
 				<div className="library_box ">
 					<div className="row justify-content-center">
 						{/* Library CARD */}
-						<div className="library_card">
+						<div className="library_card glass_effect glass_effect_border">
 							<div className="left_filters_section">
 								<p className="mxv_library_heading">MXV Library</p>
 								<p className="library_filters">Filters:</p>

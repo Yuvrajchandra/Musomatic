@@ -21,7 +21,7 @@ const StreamChatComponent = ({ account, client, streamAuthToken, setStreamAuthTo
 					</Chat>
 				</div>
 				<div className="row justify-content-center align-items-center m-0 p-0">
-					<div className="chat_unavailable_box">Uh oh! Chat is currently unavailable on mobile devices. We're still working on it.</div>
+					<div className="chat_unavailable_box glass_effect glass_effect_border">Uh oh! Chat is currently unavailable on mobile devices. We're still working on it.</div>
 				</div>
 			</div>
 		</div>

@@ -19,7 +19,7 @@ export default function UploadImage(props) {
 		<Fragment>
 			{imageUploadState ? null : (
 				<label htmlFor="upload-image-inp">
-					<div className="upload-img-div">
+					<div className="upload-img-div glass_effect glass_effect_border">
 						<img className="upload-cover-img-option" src={uploadCover} alt="cover logo" />
 						<label htmlFor="upload-image-inp" className="upload-image-label">
 							Upload

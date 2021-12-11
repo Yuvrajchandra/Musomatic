@@ -1,7 +1,8 @@
 /********************************** Team Page Modal ********************************/
 .modal-content {
-	background-color: rgba(43, 43, 43, 0.6);
-	backdrop-filter: blur(5px);
+	background: hsla(0, 10%, 100%, 0.05) !important;
+	backdrop-filter: blur(36px) !important;
+	border: 1.7px solid hsla(0, 0%, 100%, 0.2) !important;
 	border-radius: 14px;
 	padding: 15px 30px 25px 30px;
 }
@@ -30,13 +31,6 @@
 }
 
 /* Error Modal */
-.error_modal_content {
-	background-color: rgba(43, 43, 43, 0.6);
-	backdrop-filter: blur(5px);
-	border-radius: 14px;
-	font-family: var(--Poppins);
-}
-
 .error_modal_close {
 	border: none !important;
 	outline: none !important;

@@ -33,7 +33,7 @@ export default function CoverCard(props) {
 
 	return (
 		<Fragment>
-			<div className="cover_card">
+			<div className="cover_card glass_effect glass_effect_border">
 				<div className="row cover_card_row justify-content-center mb-4">
 					<div className="col-12 p-0">
 						<img className="album_cover" src={props.songCoverURL} width="100%" alt="album cover" />

@@ -29,7 +29,7 @@ export default function MusicUploadLabel(props) {
 			) : (
 				<label htmlFor="upload-song-inp">
 					{/* CSS FOR THIS PART IS SAME AS THAT FOR UPLOAD IMAGE */}
-					<div className="upload-img-div">
+					<div className="upload-img-div glass_effect glass_effect_border">
 						<img className="upload-song-option mb-2" src={uploadCover} alt="cover logo" />
 						<label htmlFor="upload-song-inp" className="upload-image-label">
 							Upload Song

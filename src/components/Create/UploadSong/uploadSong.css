@@ -19,6 +19,7 @@
 	border-bottom-right-radius: 0px;
 	position: relative;
 	z-index: 8;
+	border-right: none !important;
 }
 
 .upload-song-option {

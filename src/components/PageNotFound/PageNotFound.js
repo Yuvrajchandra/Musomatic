@@ -5,7 +5,7 @@ function PageNotFound() {
 	return (
 		<Fragment>
 			<div className="page_not_found_container">
-				<div className="wrapper">
+				<div className="wrapper glass_effect glass_effect_border">
 					<div className="page-wrapper">
 						<div className="needle-wrapper">
 							<div className="base"></div>

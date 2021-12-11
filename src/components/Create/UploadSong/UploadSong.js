@@ -19,7 +19,7 @@ export default function UploadSong(props) {
 	return (
 		<div className="main-upload-div row p-0">
 			{/* DIV 1 */}
-			<div className="create_nft_bg upload-song-div-1">
+			<div className="create_nft_bg glass_effect glass_effect_border upload-song-div-1">
 				{/* DIV HEADING */}
 				<h3 className="create_nft_heading">Upload your song</h3>
 				{/* DIV CONTENT */}

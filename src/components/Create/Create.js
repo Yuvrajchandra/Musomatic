@@ -155,7 +155,7 @@ export default function Create(props) {
 
 						{/* TERMS AND CONDITIONS */}
 						<div className="row justify-content-center terms-conditions-div-row">
-							<div className="terms-conditions-div m-0 mt-4">
+							<div className="terms-conditions-div glass_effect glass_effect_border m-0 mt-4">
 								{/* CHECK BOX 1 */}
 								<div className="form-check">
 									<input className="form-check-input" type="checkbox" value="" id="checkbox1" required />

@@ -22,11 +22,11 @@ export default function Dashboard(props) {
 	return (
 		<Fragment>
 			<div className="dashboard-container">
-				<div className="dashboard-box ">
+				<div className="dashboard-box">
 					<div className="row">
 						<div>
 							{/* Dashboard CARD */}
-							<div className="dashboard-card">
+							<div className="dashboard-card glass_effect glass_effect_border">
 								{/* LEFT SIDE TEXT */}
 								<div className="user-info-dashboard">
 									<div>
@@ -36,24 +36,21 @@ export default function Dashboard(props) {
 										<Fragment>
 											<div className="mt-4 text-md-left text-center user-account-info">
 												<div className="col-md-2 col-12 p-0 mr-0">
-													<Jazzicon diameter={85} seed={jsNumberForAddress(props.account)} />
+													<Jazzicon diameter={80} seed={jsNumberForAddress(props.account)} />
 												</div>
 												<div className="welcome-div">
 													<p className="col-md-10 col-12 m-0 p-0 dashboard-text">Welcome Creator!</p>
-													<p className="col-md-10 col-12 m-0 mt-1 p-0 user-address">{props.account}</p>
-													{/* <div className="col-md-10 col-12 p-0 mt-md-0 mt-4 dashboard-text ">{props.account}</div> */}
+													<p className="col-md-10 col-12 m-0 mt-1 p-0 user-address text-break">{props.account}</p>
 												</div>
-												{/* <div className="col-md-10 col-12 p-0 mt-md-0 mt-4 dashboard-text align-self-end">{props.account}</div> */}
 											</div>
-											{/* {props.songNFTs.filter(isOwner).length > 0 ? ( */}
-												<Link to={"/chat"}>
-													<button className="btn btn-primary shadow-sm chat_with_artist_btn mt-3">
-														<span>
-															Chat with the artists &nbsp;<i className="fas fa-comments"></i>
-														</span>
-													</button>
-												</Link>
-											{/* ) : null} */}
+
+											<Link to={"/chat"}>
+												<button className="btn btn-primary shadow-sm chat_with_artist_btn mt-3">
+													<span>
+														Chat with the artists &nbsp;<i className="fas fa-comments"></i>
+													</span>
+												</button>
+											</Link>
 										</Fragment>
 									) : (
 										<div>
@@ -82,7 +79,7 @@ export default function Dashboard(props) {
 					</div>
 					<div className="lower-section">
 						{/* OWNED BY ME DIV */}
-						<div className="owned-by-user">
+						<div className="owned-by-user glass_effect glass_effect_border">
 							<div className="mt-5 p-0 text-center">
 								<h2 className="p-0 green_text">Owned by me</h2>
 							</div>
@@ -122,7 +119,7 @@ export default function Dashboard(props) {
 						</div>
 						{/* <br />
 					<br /> */}
-						<div className="created-by-me">
+						<div className="created-by-me glass_effect glass_effect_border">
 							<div className="mt-5 p-0 text-center">
 								<h2 className="p-0 green_text">Created by me</h2>
 							</div>

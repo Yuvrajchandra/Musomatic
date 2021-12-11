@@ -20,7 +20,7 @@ export default function UploadSongDiv2(props) {
 	return (
 		<Fragment>
 			{/* <div className={"create_nft_bg upload-song-div-2 " + (isLyrical ? "" : "rounded-borders") +(props.smallScreen? " small-screen-style mt-5":" small-screen-div-2")}> */}
-			<div className={"create_nft_bg upload-song-div-2 " + (props.smallScreen ? " small-screen-style mt-5" : " small-screen-div-2")}>
+			<div className={"create_nft_bg glass_effect glass_effect_border upload-song-div-2 " + (props.smallScreen ? " small-screen-style mt-5" : " small-screen-div-2")}>
 				{/* DIV HEADING */}
 				<h3 className="create_nft_heading">Other Details</h3>
 				{/* <div className={isLyrical ? "div1-content" : "pr-5"}> */}

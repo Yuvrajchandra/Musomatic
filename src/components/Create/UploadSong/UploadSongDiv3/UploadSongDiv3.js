@@ -28,7 +28,7 @@ export default function UploadSongDiv3(props) {
 	};
 
 	return (
-		<div className={"create_nft_bg upload-song-div-3" + (props.smallScreen ? " mt-5" : " small-screen-div-3")}>
+		<div className={"create_nft_bg glass_effect glass_effect_border upload-song-div-3" + (props.smallScreen ? " mt-5" : " small-screen-div-3")}>
 			<h3 className="create_nft_heading hidden-head">Other Details</h3>
 			<div className="large-dropdown-div">
 				<p>Frequency Type</p>

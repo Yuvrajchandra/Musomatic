@@ -48,7 +48,7 @@ export default function ContactUs() {
 					<div className="row contact_form">
 						<div className="offset-md-1 col-md-10 offset-0 col-12">
 							<div className="contact_us_div">
-								<div className="contact_us_box col-md-12 p-3 shadow mb-5">
+								<div className="contact_us_box glass_effect glass_effect_border col-md-12 p-3 shadow mb-5">
 									<form className="message_inputs" action="https://getform.io/f/91471bcd-4363-49f9-9762-bb91ed85745b" method="POST">
 										<div className="row">
 											<div className="col-md-5">

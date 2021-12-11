@@ -40,8 +40,6 @@
 .terms-conditions-div {
 	width: calc(33% + 866px);
 	margin-left: 14px !important;
-	background-color: rgba(255, 255, 255, 0.1);
-	backdrop-filter: blur(5px);
 	border-radius: 12px;
 	font-family: var(--Poppins);
 	padding: 24px 30px 32px 30px;

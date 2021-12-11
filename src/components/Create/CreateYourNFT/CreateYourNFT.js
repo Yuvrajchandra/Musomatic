@@ -5,7 +5,7 @@ import Tooltip from "../../Utils/Tooltip/Tooltip";
 
 export default function CreateYourNFT(props) {
 	return (
-		<div className="create_nft_bg upload_cover_image_div">
+		<div className="create_nft_bg glass_effect glass_effect_border upload_cover_image_div">
 			{/* UPLOAD COVER IMAGE */}
 			<h3 className="create_nft_heading">Create your NFT</h3>
 			{/* NEED TO EXPORT CLASSES FROM CURRENT FILE"S CSS TO UPLOAD IMAGE */}

@@ -44,7 +44,7 @@ export default function Cta(props) {
 					</div>
 
 					{/* Card Element */}
-					<div className="cta-card">
+					<div className="cta-card glass_effect_border">
 						<img src={soundWave} alt="" />
 						{props.isHomeSection ? (
 							<Link to={"/library"} className="cardLink">

@@ -126,8 +126,6 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	padding: 50px;
-	background-color: rgba(255, 255, 255, 0.1);
-	backdrop-filter: blur(5px);
 	border-radius: 14px;
 }
 

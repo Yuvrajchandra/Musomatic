@@ -24,7 +24,7 @@ export default function Trending(props) {
 				<div className="trending_box">
 					<div className="row justify-content-center">
 						{/* Trending Cards Row */}
-						<div className="trending_bg_glass">
+						<div className="trending_bg_glass glass_effect glass_effect_border">
 							<p className="trending_heading">Trending</p>
 							<div className="trending_cards_div">
 								<div className="row trending_cards_row justify-content-center m-0 p-0">
@@ -40,7 +40,7 @@ export default function Trending(props) {
 						</div>
 
 						{/* CTA Create Trends */}
-						<div className="mt-5 cta_create_trend row justify-content-center">
+						<div className="mt-5 cta_create_trend glass_effect glass_effect_border row justify-content-center">
 							<img src={trendingIcon} alt="create trends" />
 							<div className="row justify-content-center">
 								<div className="cta_trend_text">
