@@ -1,26 +1,24 @@
 import React, { Fragment } from "react";
 import "./section3.css";
 import Button from "../../Layout/Button/Button";
-import dashboardImage from "../../../assets/to-delete3.jpg";
 
-export default function Section2(){
+export default function Section3(){
     return(
         <Fragment>
-            <div className="section3-container">
-                <div className="section3-card">
-                    <div>
-                        <img className="dashboard-preview" src={dashboardImage} alt="dashboard preview" />
+            <div className="section3-container row m-0 justify-content-center">
+                <div className="section3-card d-flex">
+                    <div className="dashboard-preview">
                     </div>
-                    <div className="d-flex align-items-end flex-column">
-                        <div className="grey-sub-card d-flex flex-column ps-4">
+                    <div className="col d-flex flex-column align-items-end m-0 p-0">
+                        <div className="d-flex flex-column grey-sub-card">
                             <div>
                                 <h3><strong>Creating NFT <br/>is so easy</strong></h3>
                             </div>
                             <div className="mt-4">
                                 <p>
-                                    Making the process of Creating and <br/>
-                                    Selling NFTs easy has always been our <br />
-                                    main goal. Our website UI places things <br />
+                                    Making the process of Creating and
+                                    Selling NFTs easy has always been our 
+                                    main goal. Our website UI places things 
                                     that matter the most.
                                 </p>
                             </div>
