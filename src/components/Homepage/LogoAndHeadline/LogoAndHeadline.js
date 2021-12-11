@@ -19,14 +19,10 @@ const LogoAndHeadline = () => {
                     <div className='heading-logo-2'>
                         <div >New Crypto</div>
                         <div >World</div>
-
                     </div>
                 </div>
             </div>
-
         </div>
-
-
     );
 }
 export default LogoAndHeadline;
