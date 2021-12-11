@@ -30,6 +30,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
     "react-select": "^5.2.1",
+    "react-slideshow-image": "^3.6.0",
     "stream-chat": "^3.13.1",
     "stream-chat-react": "^6.12.0",
     "truffle": "5.4.10",
