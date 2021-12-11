@@ -2,6 +2,7 @@ import React from 'react';
 import './MessageDemo.css';
 import ChatDemo1 from '../../../assets/Group333.svg'
 import ChatDemo2 from '../../../assets/Group334.svg'
+import Asset1 from '../../../assets/section4Asset1.png'
 const MessageDemo = () => {
     return (
         <div className='message-demo-container'>
@@ -11,6 +12,9 @@ const MessageDemo = () => {
                 <div>There's more to just</div>
                 <div>buy and sell NFTs</div>
 
+            </div>
+            <div >
+            <img className='asset1-img' src={Asset1} alt="assets-mobile"></img>
             </div>
 
             <div className='chat-sample-layout'>
