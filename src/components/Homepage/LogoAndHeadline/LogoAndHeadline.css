@@ -1,0 +1,54 @@
+.abcd{
+    background-color: black;
+}
+.heading-logo{
+    width: 100%;
+    font-family: var(--Poppins);
+    font-size: 40px;
+    color: #FF2526;
+    text-transform: uppercase; 
+    font-weight: 700;
+    text-align: center;
+    padding: 40px;
+}
+.grey-background{
+    background-color: rgb(23, 23, 23);
+    height: 25vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.heading-logo-master-container{
+    position: relative;
+}
+.heading-logo-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    /* padding: 20%; */
+}
+
+.heading-logo-2{
+    font-family: var(--Poppins);
+    font-size: 40px;
+    color: #FF2526;
+    text-transform: uppercase; 
+    font-weight: 700;
+    z-index: 2;
+    text-align: center;
+    padding: 0 10%;
+    letter-spacing: 7px;
+    line-height: 95%;
+}
+
+.image-logo{
+    height: 40vh;
+    z-index: 2;
+    position: relative;
+    top: 10px;
+    
+}
