@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
-import HeroSection from "./HeroSection/HeroSection.js";
+// import HeroSection from "./HeroSection/HeroSection.js";
+import Hero from "./Hero/Hero.js";
 import HowItWorks from "./HowItWorks/HowItWorks.js";
 import Eom from "./EOM/Eom.js";
 import Cta from "./CtaSection/Cta.js";
@@ -12,13 +13,14 @@ import MessageDemo from "./MessageDemo/MessageDemo"
 export default function HomePage() {
 	return (
 		<Fragment>
-			<HeroSection />
-			<HowItWorks />
-			<Eom />
-			<Cta isHomeSection={true} />
+			<Hero />
+			{/* <HeroSection /> */}
 			<Section2/>
 			<Section3/>
 			<MessageDemo />
+			<HowItWorks />
+			{/* <Eom /> */}
+			{/* <Cta isHomeSection={true} /> */}
 			<LogoAndHeadline />
 		</Fragment>
 	);
