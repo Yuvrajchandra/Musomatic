@@ -1,5 +1,8 @@
 # Musomatic
 
+<img src="./musomatic_home.png" alt="Musomatic Home"/>
+
+<br/>
 Musomatic is a decentralized platform where musicians can put up music/songs as NFTs. These NFTs can then be traded and each time an NFT gets traded, the musician will receive a certain percent of the trade as royalty! The main essence of the platform is to uplift music creators as they really do not get enough recognition and monetary benefits or royalties from the current available sources.
 
 Website link- <a href="https://pushpit07.github.io/Musomatic/">Musomatic</a>
@@ -7,6 +10,7 @@ Website link- <a href="https://pushpit07.github.io/Musomatic/">Musomatic</a>
 ## Tech Used
 
 ### Frontend
+
 <p align="left">
 <img src = "https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"/>
 <img src = "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
@@ -15,12 +19,14 @@ Website link- <a href="https://pushpit07.github.io/Musomatic/">Musomatic</a>
 </p>
 
 ### Smart Contract and Backend
+
 <p align="left">
 <img src = "https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"/>
 <img src = "https://img.shields.io/badge/Solidity-e6e6e6?style=for-the-badge&logo=solidity&logoColor=black"/>
 </p>
 
 ### Other
+
 <p>IPFS, Ganache, Truffle, Web3.js, Metamask, Infura, Moralis, Zapier, Stream</p>
 
 ## How to setup
@@ -43,11 +49,11 @@ Website link- <a href="https://pushpit07.github.io/Musomatic/">Musomatic</a>
 
 ## How to contribute?
 
-- **DO NOT** make and push changes to the main branch!
+-   **DO NOT** make and push changes to the main branch!
 
-- **Always** keep your main/working branch in sync with the main repository `git pull upstream main` on the branch you are working on locally.
+-   **Always** keep your main/working branch in sync with the main repository `git pull upstream main` on the branch you are working on locally.
 
-- **Always create a new branch** before making any changes `git checkout -b <new-branch-name>`, never ever make any changes directly on the master/main branch.
+-   **Always create a new branch** before making any changes `git checkout -b <new-branch-name>`, never ever make any changes directly on the master/main branch.
 
 ## Running the Test Script
 
