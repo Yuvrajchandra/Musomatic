@@ -3,8 +3,7 @@
 /**************************************************************************/
 
 body {
-	background-color: rgb(15, 17, 24);
-	background-image: url("../assets/hero.svg");
+	background: #0e201f;
 	color: rgb(236, 236, 236);
 	overflow-x: hidden;
 }
