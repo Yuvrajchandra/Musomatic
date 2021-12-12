@@ -77,7 +77,7 @@ export default function CreateYourNFT(props) {
 						<span className="mr-2">On Sale</span>
 						<Tooltip
 							labelText=""
-							message={`Do you want to keep the NFT on the MXV marketplace for sale? If you choose no, then interested buyers will not be able to buy this NFT until you put it back up on the marketplace again.`}
+							message={`Do you want to keep the NFT on the Musomatic marketplace for sale? If you choose no, then interested buyers will not be able to buy this NFT until you put it back up on the marketplace again.`}
 						/>
 					</p>
 

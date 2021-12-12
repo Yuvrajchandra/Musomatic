@@ -88,13 +88,13 @@ export default function Faq() {
 		{
 			ID: "heading10",
 			dataBsTarget: "collapse10",
-			question: "Are MXV NFTs ERC-721 tokens?",
-			answer: `This is quite ambiguous. We comply with the ERC-721 standard but MXV is a custom contract, which means that it doesn't comply completely with any standards.`,
+			question: "Are Musomatic NFTs ERC-721 tokens?",
+			answer: `This is quite ambiguous. We comply with the ERC-721 standard but Musomatic is a custom contract, which means that it doesn't comply completely with any standards.`,
 		},
 		{
 			ID: "heading11",
 			dataBsTarget: "collapse11",
-			question: "Where are the songs and cover images for the MXV NFTs stored?",
+			question: "Where are the songs and cover images for the Musomatic NFTs stored?",
 			answer: `The actual songs and images of the NFTs are too large to store on the blockchain, so we store the songs and images on IPFS, and then embed the hashes into our smart contract.`,
 		},
 		{

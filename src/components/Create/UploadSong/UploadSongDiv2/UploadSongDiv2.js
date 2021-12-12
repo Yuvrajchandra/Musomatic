@@ -55,7 +55,7 @@ export default function UploadSongDiv2(props) {
 						Background &nbsp;
 						<Tooltip
 							labelText="Know more"
-							message={`The background field in MXV helps connect artists with their fans on a deeper level. You can write about the whole ideation process and the journey behind creating this awesome piece of music. Your fans will really be interested in hearing this from you!`}
+							message={`The background field in Musomatic helps connect artists with their fans on a deeper level. You can write about the whole ideation process and the journey behind creating this awesome piece of music. Your fans will really be interested in hearing this from you!`}
 						/>
 					</p>
 					<div className="form-group">

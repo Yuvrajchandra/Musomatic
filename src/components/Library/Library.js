@@ -142,7 +142,7 @@ export default function Library(props) {
 						{/* Library CARD */}
 						<div className="library_card glass_effect glass_effect_border">
 							<div className="left_filters_section">
-								<p className="mxv_library_heading">MXV Library</p>
+								<p className="mxv_library_heading">Musomatic Library</p>
 								<p className="library_filters">Filters:</p>
 								{/* DROPDOWNS */}
 								<div className="library-dropdowns">

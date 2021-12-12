@@ -28,7 +28,7 @@ contract("Musomatic", ([deployer, seller, buyer, buyer2]) => {
 
 		it("has a symbol", async () => {
 			const symbol = await contract.symbol();
-			assert.equal(symbol, "MXV");
+			assert.equal(symbol, "MSM");
 		});
 	});
 

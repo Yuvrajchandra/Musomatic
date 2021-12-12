@@ -45,7 +45,7 @@ export default function Trending(props) {
 							<div className="row justify-content-center">
 								<div className="cta_trend_text">
 									<p>Don't follow trends. Start trends!</p>
-									<span>Upload your songs on MXV</span>
+									<span>Upload your songs on Musomatic</span>
 								</div>
 							</div>
 
