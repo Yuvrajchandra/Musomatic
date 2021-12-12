@@ -1,11 +1,16 @@
-/* ../../../assets/hero-img-4.png */
+.image-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 .hero-container-new {
-	background-position: center;
 	/* background-image: url("../../../assets/hero-img-1.png"); */
+	/* background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
-	/* height: 85vh; */
-	width: 100vw;
-	aspect-ratio: 2.742543709290367;
+	background-size: cover; */
+	height: 90vh;
+	object-fit: contain;
+	/* width: 100vw; */
+	/* aspect-ratio: 2.742543709290367; */
 }
