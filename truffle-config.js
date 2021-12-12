@@ -14,13 +14,13 @@ module.exports = {
 		},
 		// For Polygon Testnet
 		mumbai: {
-			provider: () => new HDWalletProvider(process.env.MNEMONIC, `https://polygon-mumbai.infura.io/v3/${process.env.INFURA_API_KEY}`),
+			provider: () => new HDWalletProvider(process.env.MNEMONIC, `wss://polygon-mumbai.infura.io/ws/v3/${process.env.INFURA_API_KEY}`),
 			network_id: 80001,
 			networkCheckTimeout: 999999,
 			confirmations: 2,
 			timeoutBlocks: 200,
 			skipDryRun: true,
-			gas: 6000000,
+			gas: 20000000,
 			gasPrice: 10000000000,
 		},
 	},

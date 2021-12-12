@@ -99,11 +99,14 @@ export default function Create(props) {
 
 							const _isrcResponse = await fetchSongDetails();
 
-							if (_isrcResponse && _isrcResponse.data.tracks.items[0].name === _name && _isrcResponse.data.tracks.items[0].artists[0].name === _artistName) {
-								props.createSong(_name, _artistName, _price, _onSale, _links, _characteristics);
-							} else {
-								setShowCreateError(true);
-							}
+							// TODO: Comment out this line when testing
+
+							// if (_isrcResponse && _isrcResponse.data.tracks.items[0].name === _name && _isrcResponse.data.tracks.items[0].artists[0].name === _artistName) {
+							// 	props.createSong(_name, _artistName, _price, _onSale, _links, _characteristics);
+							// } else {
+							// 	setShowCreateError(true);
+							// }
+							props.createSong(_name, _artistName, _price, _onSale, _links, _characteristics);
 							// I'm the highest in the room. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lacus libero, pharetra a ex non, venenatis pellentesque quam. Integer scelerisque magna pellentesque, ornare elit eleifend, interdum nisl. Nulla porttitor non tellus non dignissim. Integer diam quam, condimentum sit amet arcu tempus, semper aliquet mauris. Nullam porta mi non justo fermentum, scelerisque tincidunt purus tincidunt. Morbi eleifend mauris eros, vitae consequat lectus rhoncus et. Fusce suscipit ipsum varius porttitor porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lacus libero, pharetra a ex non, venenatis pellentesque quam. Integer scelerisque magna pellentesque, ornare elit eleifend, interdum nisl. Nulla porttitor non tellus non dignissim. Integer diam quam, condimentum sit amet arcu tempus, semper aliquet mauris. Nullam porta mi non justo fermentum, scelerisque tincidunt purus tincidunt. Morbi eleifend mauris eros, vitae consequat lectus rhoncus et. Fusce suscipit ipsum varius porttitor porttitor.
 						}}
 					>

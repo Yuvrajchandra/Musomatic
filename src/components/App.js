@@ -147,8 +147,13 @@ function App() {
 			setMusomatic(_musomatic);
 
 			// Fetch all NFTs
-			const _nfts = await _musomatic.methods.fetchAllNFTs().call();
-			setSongNFTs(_nfts);
+			var _nfts;
+			try {
+				_nfts = await _musomatic.methods.fetchAllNFTs().call();
+				setSongNFTs(_nfts);
+			} catch (err) {
+				console.log(err);
+			}
 
 			setLoading(false);
 		} else {

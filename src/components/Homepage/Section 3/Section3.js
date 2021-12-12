@@ -14,7 +14,7 @@ export default function Section3() {
 							<div>
 								<h3>
 									<strong>
-										Creating NFT <br />
+										Creating NFTs <br />
 										is so easy
 									</strong>
 								</h3>
