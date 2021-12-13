@@ -7,7 +7,7 @@
 
 .section3-card {
 	max-width: 1500px;
-	height: fit-content;
+	height: 400px;
 	background-color: rgba(255, 255, 255, 0.1);
 	backdrop-filter: blur(5px);
 	border-radius: 20px;
@@ -76,6 +76,10 @@
 }
 
 @media (max-width: 969px) {
+	.section3-card{
+		height: fit-content;
+	}
+	
 	.grey-sub-card {
 		width: 100%;
 		padding-left: 0 !important;
