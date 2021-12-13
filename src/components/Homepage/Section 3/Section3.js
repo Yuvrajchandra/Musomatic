@@ -22,7 +22,7 @@ export default function Section3() {
 							<div className="mt-4">
 								<p>Making the process of Creating and Selling NFTs easy has always been our main goal. Our website UI places things that matter the most.</p>
 							</div>
-							<div className="d-flex mt-4">
+							<div className="d-flex mt-4 button-card">
 								<div className="me-2 flex-fill">
 									<Link to={"/create"}>
 										<Button>Create</Button>
