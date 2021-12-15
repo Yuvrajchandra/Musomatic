@@ -9,10 +9,8 @@
 	/* background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover; */
-	/* height: 90vh; */
-	max-width: 100%;
-	height: auto;
-	/* object-fit: contain; */
+	height: 90vh;
+	object-fit: contain;
 	/* width: 100vw; */
 	/* aspect-ratio: 2.742543709290367; */
 }
