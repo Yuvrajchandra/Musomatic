@@ -10,6 +10,8 @@
 	position: relative;
 	max-width: 1500px;
 	font-size: 16px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 .section2-intro h1{
@@ -135,10 +137,15 @@
 
 	.green-card{
 		height: fit-content;
+		padding: 2rem 2.5rem;
 	}
 }
 
 @media (max-width: 606px) {
+	.section2-container{
+		padding: 60px 50px;
+	}
+
 	.song-info-preview{
 		display: none;
 	}
@@ -155,5 +162,11 @@
 
 	.green-card h3{
 		font-size: 1.1rem;
+		width: 90%;
+	}
+
+	.section2-box{
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 }

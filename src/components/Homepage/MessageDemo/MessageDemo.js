@@ -15,6 +15,7 @@ const MessageDemo = () => {
 				<div>
 					<img className="asset1-img" src={Asset1} alt="assets-mobile"></img>
 				</div>
+				{/* CHAT FEATURE PREVIEW */}
 				<div className="chat-sample-layout">
 					<div className="message-card-1 glass_effect glass_effect_border">
 						<div className="message-card-1-text">

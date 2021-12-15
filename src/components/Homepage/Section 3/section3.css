@@ -113,13 +113,18 @@
 }
 
 @media (max-width: 606px) {
+	.section3-container {
+		padding: 60px 50px 160px 50px;
+	}
+
 	.section3-card {
 		margin-top: 0;
+		padding: 2rem 2.5rem;
 	}
 
 	.grey-sub-card h3 {
 		width: 100%;
-		font-size: 1.1rem;
+		font-size: 1.2rem;
 		padding: 0 !important;
 	}
 
@@ -141,5 +146,9 @@
 
 	.button-card Button {
 		margin-top: 1rem;
+	}
+
+	.button-card div{
+		margin: 0px !important;
 	}
 }
