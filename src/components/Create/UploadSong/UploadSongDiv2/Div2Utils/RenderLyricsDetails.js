@@ -22,6 +22,7 @@ export default function RenderLyricsDetails(props) {
 					}}
 					data-bs-toggle="modal"
 					data-bs-target="#lyricsModal"
+					spellCheck = "false"
 				></textarea>
 			</div>
 		</Fragment>

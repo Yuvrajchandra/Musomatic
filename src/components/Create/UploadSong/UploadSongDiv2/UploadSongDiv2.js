@@ -69,6 +69,7 @@ export default function UploadSongDiv2(props) {
 							}}
 							data-bs-toggle="modal"
 							data-bs-target="#backgroundModal"
+							spellCheck = "false"
 						></textarea>
 					</div>
 				</div>

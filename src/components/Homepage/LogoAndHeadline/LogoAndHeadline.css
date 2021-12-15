@@ -3,6 +3,7 @@
 	padding: 40px 0px 0px 0px;
 	background-color: #000;
 	font-family: var(--Poppins);
+	overflow-x: hidden;
 }
 
 .heading-logo {
